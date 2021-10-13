@@ -1,0 +1,38 @@
+<launch>
+
+
+ <param name="robot_description" command="$(find xacro)/xacro  '$(find ranger_mini_gazebo)/xacro/ranger_mini_base.xacro'" />
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+  </include>
+
+
+  <!-- 2.Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+	args="-urdf -model ranger_mini -param robot_description"/> 		
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ranger_mini_base)/launch/ranger.rviz" />
+ <!--
+ <rosparam file="$(find bunker_base_1)/config/diff_controller.yaml" command="load"/>
+
+  <node name="base_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/bunker_base" args=" bunker_base_controller "/>-->
+
+ <node name="base_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" ></node> 
+
+  <node name="base_robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"  output="screen" >
+
+    </node> -->
+
+
+</launch>

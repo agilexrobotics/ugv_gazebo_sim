@@ -1,0 +1,24 @@
+<package format="2">
+  <name>urdf_geometry_parser</name>
+  <version>0.1.0</version>
+  <description>Extract geometry value of a vehicle from urdf.</description>
+
+  <maintainer email="vincent.rousseau@irstea.fr">Vincent Rousseau</maintainer>
+  <maintainer email="bence.magyar.robotics@gmail.com">Bence Magyar</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/urdf_geometry_parser</url>
+  <url type="bugtracker">https://github.com/ros-controls/urdf_geometry_parser/issues</url>
+  <url type="repository">https://github.com/ros-controls/urdf_geometry_parser.git</url>
+
+  <author email="vincent.rousseau@irstea.fr">Vincent Rousseau</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>urdf</depend>
+
+  <test_depend>rostest</test_depend>
+  <test_depend>xacro</test_depend>
+</package>

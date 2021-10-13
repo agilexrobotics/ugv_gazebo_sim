@@ -1,0 +1,12 @@
+# Configuration for the steer_bot_hardware_gazebo plugin.
+steer_bot_hardware_gazebo:
+    rear_wheel  : 'rear_wheel_joint'
+    front_steer : 'front_steer_joint'
+
+    virtual_rear_wheels: ['left_rear_joint','right_rear_joint']
+    virtual_front_wheels: ['front_left_wheel_joint','front_right_wheel_joint']
+    virtual_front_steers: ['front_steer_left_joint','front_steer_right_joint']
+
+    enable_ackermann_link : true
+    wheel_separation_h : 0.60986
+    wheel_separation_w : 0.47

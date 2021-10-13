@@ -1,0 +1,12 @@
+*.a
+*.o
+*.os
+*.pyc
+*.so
+*.tar.gz
+*~
+TAGS
+build/
+msg_gen/
+src/
+

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ranger_mini_base"  xmlns:xacro="http://ros.org/wiki/xacro" >
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="7.83392998288113E-06 -0.0561633274052439 0.108369550368085"
+        rpy="0 0 0" />
+      <mass
+        value="0.0001" />
+      <inertia
+        ixx="0.2564062442362"
+        ixy="-1.00512007627321E-06"
+        ixz="-1.26777812555316E-06"
+        iyy="0.114562423027245"
+        iyz="0.00308016988538698"
+        izz="0.339397614282689" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_mini_base/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_mini_base/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link
+    name="front_left_link">
+    <inertial>
+      <origin
+        xyz="-0.0039286 0.00080979 0.15406"
+        rpy="0 0 0" />
+      <mass
+        value="0.0001" />
+      <inertia
+        ixx="0.0051607"
+        ixy="-9.3277E-07"
+        ixz="1.9263E-07"
+        iyy="0.0027908"
+        iyz="6.4602E-08"
+        izz="0.0028586" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_mini_base/meshes/front_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_mini_base/meshes/front_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_joint"
+    type="fixed">
+    <origin
+      xyz="0.18001 -0.26366 0.0557"
+      rpy="3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_left_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="front_right_link">
+    <inertial>
+      <origin
+        xyz="0.003915 -1.1838E-05 0.15409"
+        rpy="0 0 0" />
+      <mass
+        value="0.0001" />
+      <inertia
+        ixx="0.0051612"
+        ixy="-9.3393E-07"
+        ixz="-1.2386E-07"
+        iyy="0.0027921"
+        iyz="-8.6507E-08"
+        izz="0.00286" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_mini_base/meshes/front_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_mini_base/meshes/front_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_joint"
+    type="fixed">
+    <origin
+      xyz="-0.18 -0.26366 0.0557"
+      rpy="3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_right_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rear_left_link">
+    <inertial>
+      <origin
+        xyz="-0.0039468 1.223E-05 0.15483"
+        rpy="0 0 0" />
+      <mass
+        value="0.0001" />
+      <inertia
+        ixx="0.0051552"
+        ixy="-9.7224E-07"
+        ixz="1.9001E-07"
+        iyy="0.0027855"
+        iyz="3.9229E-07"
+        izz="0.0028461" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_mini_base/meshes/rear_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_mini_base/meshes/rear_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_left_joint"
+    type="fixed">
+    <origin
+      xyz="0.18001 0.094631 0.0557"
+      rpy="3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_left_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rear_right_link">
+    <inertial>
+      <origin
+        xyz="0.0039112 3.3074E-05 0.15408"
+        rpy="0 0 0" />
+      <mass
+        value="0.0001" />
+      <inertia
+        ixx="0.0051614"
+        ixy="3.3388E-05"
+        ixz="-1.8671E-07"
+        iyy="0.0027931"
+        iyz="-1.0159E-07"
+        izz="0.0028586" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_mini_base/meshes/rear_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_mini_base/meshes/rear_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_right_joint"
+    type="fixed">
+    <origin
+      xyz="-0.17999 0.09463 0.0557"
+      rpy="3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_right_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+
+
+
+   <gazebo>
+    <plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+      <legacyModeNS>true</legacyModeNS>
+      <robotNamespace>/ranger_mini</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+
+  <!-- <gazebo>
+  <plugin name="base_controller" filename="libgazebo_ros_planar_move.so">
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>/odom</odometryFrame>
+    <odometryRate>100.0</odometryRate>
+    <robotBaseFrame>base_link</robotBaseFrame>
+    <broadcastTF>true</broadcastTF>
+  </plugin>
+</gazebo> -->
+
+<gazebo>
+
+<plugin name="mecanum_controller" filename="libgazebo_ros_planar_move.so">
+
+<commandTopic>/cmd_vel</commandTopic>
+
+<odometryTopic>/odom</odometryTopic>
+
+<odometryFrame>odom</odometryFrame>
+
+<leftFrontJoint>fron_left_joint</leftFrontJoint>
+
+<rightFrontJoint>fron_right_joint</rightFrontJoint>
+
+<leftRearJoint>rear_left_joint</leftRearJoint>
+
+<rightRearJoint>rear_right_joint</rightRearJoint>
+
+<odometryRate>20.0</odometryRate>
+
+<robotBaseFrame>base_link</robotBaseFrame>
+
+</plugin>
+
+</gazebo>
+
+
+</robot>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<robot name="ranger_mini" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- Gazebo references -->
+
+<gazebo reference="base_link">
+  <mu1 value="0.1"/>
+  <mu2 value="0.1"/>
+  <!-- <kp  value="10000000.0" />
+  <kd  value="1.0" /> -->
+  <material>Gazebo/White</material>
+</gazebo>
+
+	<gazebo reference="front_left_steering_link">
+	  <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="0.5" />
+      <mu2 value="0.5" />
+     <material>Gazebo/Grey</material>
+    </gazebo>
+
+	<gazebo reference="front_right_steering_link">
+	  <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="0.5" />
+      <mu2 value="0.5" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+  
+  	<gazebo reference="rear_left_steering_link">
+	  <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="1.5" />
+      <mu2 value="1.5" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+  	<gazebo reference="rear_right_steering_link">
+	  <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="1.5" />
+      <mu2 value="1.5" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="ffl_wheel_link">
+      <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="10" />
+      <mu2 value="10" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="ffr_wheel_link">
+      <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="10" />
+      <mu2 value="10" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="rfl_wheel_link">
+      <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="10" />
+      <mu2 value="10" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="rfr_wheel_link">
+      <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="10" />
+      <mu2 value="10" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+
+</robot>
+ 

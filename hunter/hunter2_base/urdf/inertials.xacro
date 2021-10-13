@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!--  xacro macros for inertials.
+
+    Define xacro macros for math constants and inertials:
+    
+    - solid cuboid
+    - solid cylinder
+    - null (a placeholder inertial for logical link elements)
+ -->
+<robot name="inertials" xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <!-- Math constants -->
+    <xacro:property name="math_pi"        value="3.141592653589793" />
+    <xacro:property name="math_pi_over_2" value="1.5707963267948966" />
+    <xacro:property name="math_pi_over_4" value="0.785398163397448" />
+
+    <!-- Inertial for solid cuboid with dimensions x y z  -->
+    <xacro:macro name="solid_cuboid_inertial" params="rpy xyz mass x y z">
+        <inertial>
+            <origin rpy="${rpy}" xyz="${xyz}"/>
+            <mass value="${mass}" />
+            <inertia
+                ixx="${mass * (y * y + z * z) / 12.0}" ixy="0.0" ixz="0.0"
+                iyy="${mass * (x * x + z * z) / 12.0}" iyz="0.0"
+                izz="${mass * (x * x + y * y) / 12.0}" />
+        </inertial>
+    </xacro:macro>
+
+    <!-- Inertial for solid cylinder with radius and length aligned to z-axis  -->
+    <xacro:macro name="solid_cylinder_inertial" params="rpy xyz mass radius length">
+        <inertial>
+            <origin rpy="${rpy}" xyz="${xyz}"/>
+            <mass value="${mass}" />
+            <inertia
+                ixx="${mass * (3.0 * radius * radius + length * length) / 12.0}" ixy="0.0" ixz="0.0"
+                iyy="${mass * (3.0 * radius * radius + length * length) / 12.0}" iyz="0.0"
+                izz="${mass * (radius * radius) / 2.0}" />
+        </inertial>
+    </xacro:macro>
+
+    <!-- A null inertial - used in placeholder links to esure the model will work in Gazebo -->
+    <xacro:macro name="null_inertial">
+        <inertial>
+            <mass value="0.001"/>
+            <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+        </inertial>
+    </xacro:macro>
+</robot>

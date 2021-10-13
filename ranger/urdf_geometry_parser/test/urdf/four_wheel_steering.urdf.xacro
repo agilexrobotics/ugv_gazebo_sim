@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<robot name="four_wheel_steering_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find urdf_geometry_parser)/test/urdf/chassis.xacro" />
+  <xacro:include filename="$(find urdf_geometry_parser)/test/urdf/wheel_steered.xacro" />
+
+  <xacro:property name="M_PI" value="3.14159" />
+
+  <!-- Wheel Mounting Positions -->
+  <xacro:property name="ground_clearance" value="0.19" />
+  <xacro:property name="wheel_x_offset" value="0.0" />
+  <xacro:property name="wheel_y_offset" value="0.05" />
+
+  <xacro:chassis />
+
+  <!-- Wheel macros -->
+  <xacro:wheel_steered wheel_prefix="front_left" parent_link="base_link" left_right="-1">
+    <origin xyz="${wheelbase/2+wheel_x_offset} ${track/2} ${-base_z_size/2 + wheel_radius - ground_clearance}" rpy="0 0 0" />
+  </xacro:wheel_steered>
+  <xacro:wheel_steered wheel_prefix="front_right" parent_link="base_link" left_right="1">
+    <origin xyz="${wheelbase/2+wheel_x_offset} ${-track/2} ${-base_z_size/2 + wheel_radius - ground_clearance}" rpy="0 0 0" />
+  </xacro:wheel_steered>
+  <xacro:wheel_steered wheel_prefix="rear_left" parent_link="base_link" left_right="-1">
+    <origin xyz="${-wheelbase/2+wheel_x_offset} ${track/2} ${-base_z_size/2 + wheel_radius - ground_clearance}" rpy="0 0 0" />
+  </xacro:wheel_steered>
+  <xacro:wheel_steered wheel_prefix="rear_right" parent_link="base_link" left_right="1">
+    <origin xyz="${-wheelbase/2+wheel_x_offset} ${-track/2} ${-base_z_size/2 + wheel_radius - ground_clearance}" rpy="0 0 0" />
+  </xacro:wheel_steered>
+</robot>
