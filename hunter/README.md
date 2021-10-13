@@ -38,7 +38,7 @@ sudo apt-get install ros-melodic-rqt-robot-steering
 mkdir hunter_ws/src
 cd hunter_ws/src
 catkin_init_workspace
-git clone 
+git clone https://github.com/agilexrobotics/ugv_sim.git
 cd ..
 rosdep install --from-paths src --ignore-src -r -y 
 catkin_make
@@ -65,6 +65,7 @@ roslaunch hunter2_gazebo hunter2_gazebo.launch
 ```
 
 ![说明文字](image/gazebo.png)
+
 通过Robot Steering 小插件控制hunter2.0运动
 
 
