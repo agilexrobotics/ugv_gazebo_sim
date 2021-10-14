@@ -1,3 +1,5 @@
+[TOC]
+
 # ranger_mini仿真操作流程
 
 ## 一、功能包介绍
@@ -64,8 +66,6 @@ sudo apt-get install ros-melodic-rqt-robot-steering
 
 
 ## 三、用法
-
-### 第一步、创建工作空间并下载功能包
 
 ### 	1、创建工作空间、下载仿真模型功能包并编译
 
