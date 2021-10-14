@@ -29,7 +29,7 @@
     </node>
 
   <!-- launch commander node -->
-  <include file="$(find commander)/launch/commander.launch"/>
+  <include file="$(find ranger_mini_control)/launch/commander.launch"/>
 
   <!-- Load the URDF into the ROS Parameter Server -->
   <param name="robot_description" command="$(find xacro)/xacro '$(arg model)'" />

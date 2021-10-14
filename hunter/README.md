@@ -1,6 +1,6 @@
-# hunter2.0仿真操作流程
-
 [TOC]
+
+# hunter2.0仿真操作流程
 
 ## 一、功能包介绍
 
@@ -27,11 +27,11 @@
 
 ## 二、环境
 
-#### 开发环境：
+### 开发环境
 
 ​	ubuntu 18.04 + [ROS Melodic desktop full](http://wiki.ros.org/melodic/Installation/Ubuntu)
 
-#### 下载安装必备功能包：
+### 下载安装必备功能包
 
 ​	下载安装ros-control功能包，ros-control是ROS提供的机器人控制中间件
 
