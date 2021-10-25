@@ -1,8 +1,8 @@
 [TOC]
 
-# ranger_mini仿真操作流程
+# Ranger_mini Simulation Operation Process
 
-## 一、功能包介绍
+## 1.	Introduction of Function Package
 
 '''
 ├── four_wheel_steering_controller
@@ -13,53 +13,52 @@
 └── urdf_geometry_parser
 '''
 
-​	ranger_mini: 该文件夹为模型文件功能包
+​	ranger_mini: The folder is model file function package
 
-​	ranger_mini_control: 该文件夹为仿真控制器功能包
+​	ranger_mini_control: The folder is simulation controller function package
 
-​	ranger_mini_gazebo: 该文件夹为gazebo仿真功能包
+​	ranger_mini_gazebo: The folder is Gazebo simulation function package
 
-​	four_wheel_steering_controller: 该文件夹为四轮四转控制器功能包
+​	our_wheel_steering_controller: The folder is four-wheel four-steering controller function package
 
-​	four_wheel_steering_msgs: 该文件夹为四轮四转消息功能包
+​	four_wheel_steering_msgs: The folder is four-wheel four-steering message function package
+​	urdf_geometry_parser : The folder is urdf resolver
 
-​	urdf_geometry_parser :该文件夹为urdf解析器
+​	[four_wheel_steering](http://wiki.ros.org/four_wheel_steering_controller)、[four_wheel_steering_msgs](http://wiki.ros.org/four_wheel_steering_msgs)、[urdf_geometry_parser](http://wiki.ros.org/urdf_geometry_parser)are provided for official website
 
-​	[four_wheel_steering](http://wiki.ros.org/four_wheel_steering_controller)、[four_wheel_steering_msgs](http://wiki.ros.org/four_wheel_steering_msgs)、[urdf_geometry_parser](http://wiki.ros.org/urdf_geometry_parser)均为官网提供
+## 2.	Environment
 
-## 二、环境
-
-### 开发环境
+### Development Environment
 
 ​	ubuntu 18.04 + [ROS Melodic desktop full](http://wiki.ros.org/melodic/Installation/Ubuntu)
 
-### 下载安装必备功能包
+### Download and install required function package
 
-​	下载安装ros-control功能包，ros-control是ROS提供的机器人控制中间件
+​	Download and install ros-control function package, ros-control is the robot control middleware provided by ROS
 
 ```
 sudo apt-get install ros-melodic-ros-control
 ```
 
-​	下载安装ros-controllers功能包，ros-controllers是ROS提供的常见车型运动学插件
+​	Download and install ros-controllers function package, ros-controllers are the kinematics plug-in of common models provided by ROS
 
 ```
 sudo apt-get install ros-melodic-ros-controllers
 ```
 
-​	下载安装gazebo-ros功能包，gazebo-ros是gazebo和ROS之间的通信接口，将ROS和Gazebo连接起来
+​	Download and install gazebo-ros function package, gazebo-ros is the communication interface between gazebo and ROS, and connect the ROS and Gazebo
 
 ```
 sudo apt-get install ros-melodic-gazebo-ros
 ```
 
-​	下载安装gazebo-ros-control功能包， gazebo-ros-control是在ROS和Gazebo之间通信的标准控制器
+​	Download and install gazebo-ros-control function package, gazebo-ros-control is the communication standard controller between ROS and Gazebo
 
 ```
 sudo apt-get install ros-melodic-gazebo-ros-control
 ```
 
-​	下载安装rqt-robot-steering插件，rqt_robot_steering是与机器人运动控制的密切相关的ROS工具，它可以发布机器人直线运动和转向运动的控制指令，通过滑动条可以十分方便地控制机器人运动
+​	Download and install rqt-robot-steering plug-in, rqt_robot_steering is a ROS tool closely related to robot motion control, it can send the control command of robot linear motion and steering motion, and the robot motion can be easily controlled through the sliding bar
 
 ```
 sudo apt-get install ros-melodic-rqt-robot-steering 
@@ -67,59 +66,59 @@ sudo apt-get install ros-melodic-rqt-robot-steering
 
 
 
-## 三、用法
+## 3.	About Usage
 
-### 	1、创建工作空间、下载仿真模型功能包并编译
+### 	1.	Create workspace, download simulation model function package and compile
 
-​		打开一个新终端，创建一个工作空间，名字为ranger_mini_ws，在终端中输入：
+​		Open a new terminal and create a workspace named ranger_mini_ws, enter in the terminal:
 
 ```
 mkdir ranger_mini_ws
 ```
 
-​		进入到ranger_ws文件夹中
+​		Enter the ranger_ws folder
 
 ```
 cd ranger_mini_ws
 ```
 
-​		创建一个用于存放功能包的文件夹，名字为src
+​		Create a folder to store function package named src
 
 ```
 mkdir src
 ```
 
-​		进入到src文件夹
+​		Enter the src folder
 
 ```
 cd src
 ```
 
-​		初始化文件夹
+​		Initialize folder
 
 ```
 catkin_init_workspace
 ```
 
-​		下载仿真模型功能包
+​		Download simulation model function package
 
 ```
 git clone https://github.com/agilexrobotics/ugv_sim/ranger.git
 ```
 
-​		进入ranger_mini_ws文件夹
+​		Enter the ranger_mini_ws folder
 
 ```
 cd ranger_mini_ws
 ```
 
-​		确认功能包的依赖有没有安装好
+​		Confirm whether the dependency of the function package is installed
 
 ```
 rosdep install --from-paths src --ignore-src -r -y 
 ```
 
-​		进行编译
+​		Compile
 
 ```
 catkin_make
@@ -127,21 +126,21 @@ catkin_make
 
 
 
-### 2、运行ranger_mini的模型启动文件，在Rviz中可视化urdf文件
+### 2.	Run the star file of ranger_mini model and visualize the urdf file in Rviz
 
-​	进入到ranger_mini_ws文件夹
+​	Enter the ranger_mini_ws folder
 
 ```
 cd ranger_mini_ws
 ```
 
-​	声明环境变量	
+​	Declare the environment variable
 
 ```
 source devel/setup.bash
 ```
 
-​	运行ranger_mini的启动文件，在Rviz中可视化模型
+​	Run the start file of ranger_mini and visualize the model in Rvi
 
 ```
 roslaunch ranger_mini display_xacro.launch 
@@ -149,21 +148,21 @@ roslaunch ranger_mini display_xacro.launch
 
 ![说明文字](image/rviz.png)
 
-### 3、启动ranger_mini_的gazebo仿真环境，并在gazebo中控制ranger_mini运动
+### 3、3.	Start the gazebo simulation environment of ranger_mini and control ranger_mini movement in the gazebo
 
-​	进入到ranger_mini_ws
+​	Enter the ranger_mini_ws
 
 ```
 cd ranger_mini_ws
 ```
 
-​	声明环境变量
+​	Declare the environment variable
 
 ```
 source devel/setup.bash
 ```
 
-启动ranger_mini 仿真环境，滑动Robot Steering 小插件的滑动条控制机器人运动
+Start the simulation environment of ranger_mini, slide the sliding bar of Robot Steering plug-in to control robot movement
 
 ```
 roslaunch ranger_mini_gazebo launch_simulation.launch
