@@ -1,51 +1,51 @@
 [TOC]
 
-# tracer仿真操作流程
+# Tracer Simulation Operation Process
 
-## 一、功能包介绍
+## 1.	Introduction of Function Package
 
 ```
 ├── tracer_description
 └── tracer_gazebo_sim
 ```
 
-tracer_description: 该文件为模型文件功能包
+tracer_description: The file is the function package of model file
 
-tracer_gazebo_sim: 该文件夹为gazebo仿功能包
+tracer_gazebo_sim: The folder is gazebo simulation function package
 
-## 二、环境
+## 2.	Environment
 
-### 开发环境
+### Development Environment
 
 ​	ubuntu 18.04 + [ROS Melodic desktop full](http://wiki.ros.org/melodic/Installation/Ubuntu)
 
-### 下载安装必备功能包
+### Download and install required function package
 
-​	下载安装ros-control功能包，ros-control是ROS提供的机器人控制中间件
+​	Download and install ros-control function package, ros-control is the robot control middleware provided by ROS
 
 ```
 sudo apt-get install ros-melodic-ros-control
 ```
 
-​	下载安装ros-controllers功能包，ros-controllers是ROS提供的常见车型运动学插件
+​	Download and install ros-controllers function package, ros-controllers are the kinematics plug-in of common models provided by ROS
 
 ```
 sudo apt-get install ros-melodic-ros-controllers
 ```
 
-​	下载安装gazebo-ros功能包，gazebo-ros是gazebo和ROS之间的通信接口，将ROS和Gazebo连接起来
+​	Download and install gazebo-ros function package, gazebo-ros is the communication interface between gazebo and ROS, and connect the ROS and Gazebo
 
 ```
 sudo apt-get install ros-melodic-gazebo-ros
 ```
 
-​	下载安装gazebo-ros-control功能包， gazebo-ros-control是在ROS和Gazebo之间通信的标准控制器
+​	Download and install gazebo-ros-control function package, gazebo-ros-control is the communication standard controller between ROS and Gazebo
 
 ```
 sudo apt-get install ros-melodic-gazebo-ros-control
 ```
 
-​	下载安装teleop-twist-keyboard 功能包，teleop-twist-keyboard是键盘控制功能包，可以通过键盘上的“i”，“j”，“l”，“，”控制机器人前进，向左，向右，后退
+​	Download and install teleop-twist-keyboard function package, telop-twist-keyboard is keyboard control function package, the robot can be controlled to move forward, left, right and backward through "i", "j", "l",and "," on the keyboard
 
 ```
 sudo apt-get install ros-melodic-teleop-twist-keyboard 
@@ -53,59 +53,58 @@ sudo apt-get install ros-melodic-teleop-twist-keyboard
 
 
 
-## 三、用法
+## 3.	About Usage
 
-### 1、创建工作空间、下载仿真模型功能包并编译
+### 1.	Create workspace, download simulation model function package and compile
 
-​		打开一个新终端，创建一个工作空间，名字为tracer_ws，在终端中输入：
+​	Open a new terminal and create a workspace named tracer_ws, enter in the terminal:
 
 ```
 mkdir tracer_ws
 ```
 
-​		进入到tracer_ws文件夹中
+​		Enter the tracer_ws folder
 
 ```
 cd tracer_ws
 ```
 
-​		创建一个用于存放功能包的文件夹，名字为src
-
+​		Create a folder to store function package named src
 ```
 mkdir src
 ```
 
-​		进入到src文件夹
+​		Enter the src folder
 
 ```
 cd src
 ```
 
-​		初始化文件夹
+​		Initialize folder
 
 ```
 catkin_init_workspace
 ```
 
-​		下载仿真模型功能包
+​		Download simulation model function package
 
 ```
 git clone https://github.com/agilexrobotics/ugv_sim/tracer.git
 ```
 
-​		进入tracer_ws文件夹
+​		Enter the tracer_ws folder
 
 ```
 cd tracer_ws
 ```
 
-​		确认功能包的依赖有没有安装好
+​		Confirm whether the dependency of the function package is installed
 
 ```
 rosdep install --from-paths src --ignore-src -r -y 
 ```
 
-​		进行编译
+​		Compile
 
 ```
 catkin_make
@@ -113,21 +112,21 @@ catkin_make
 
 
 
-### 2、运行tracer的启动文件，在Rviz中可视化urdf文件
+### 2.	Run the star file of tracer model and visualize the urdf file in Rviz
 
-​	进入到tracer_ws文件夹
+​	Enter the tracer_ws folder
 
 ```
 cd tracer_ws
 ```
 
-​	声明环境变量
+​	Declare the environment variable
 
 ```
 source devel/setup.bash
 ```
 
-​	运行tracer的模型启动文件，在Rviz中可视化模型
+​	Run the start file of tracer and visualize the model in Rviz
 
 ```
 roslaunch tracer_description display_models.launch 
@@ -135,21 +134,21 @@ roslaunch tracer_description display_models.launch
 
 ![img](image/rviz.png) 
 
-### 3、运行tracer_gazebo_sim的启动文件，并在gazebo中控制tracer运行
+### 3.	Run the start file of tracer_gazebo_sim and control tracer movement in gazebo
 
-​	进入到tracer_ws文件夹
+​	Enter the tracer_ws folder
 
 ```
 cd tracer_ws
 ```
 
-​	声明环境变量
+​	Declare the environment variable
 
 ```
 source devel/setup.bash
 ```
 
-​	启动tracer的仿真环境
+​	Start the simulation environment of tracer
 
 ```
 roslaunch tracer_gazebo_sim tracer_playpen.launch
@@ -157,7 +156,7 @@ roslaunch tracer_gazebo_sim tracer_playpen.launch
 
 ![img](image/gazebo.png) 
 
-​	键盘控制，启动键盘控制之后，可以通过“i”，“j”，“l”，“，”控制scout2.0和scout_mini，前进，向左，向右，后退
+​	Control by keyboard, the robot can be controlled to move forward, left, right and backward through "i", "j", "l",and "," on the keyboard
 
 ```
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
