@@ -54,7 +54,7 @@
 
     <link name="inertial_link">
         <inertial>
-            <mass value="40" />
+            <mass value="200" />
             <!-- <mass value="50" /> -->
             <!-- <origin xyz="-0.00065 -0.085 0.062" />
             <inertia ixx="0.6022" ixy="-0.02364" ixz="-0.1197" iyy="1.7386" iyz="-0.001544" izz="2.0296" /> -->

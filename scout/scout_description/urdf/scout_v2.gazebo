@@ -30,16 +30,43 @@ Reference:
     </gazebo>
 
     <!-- kp spring constant, kd damping constant -->
-    <gazebo>
-        <mu1 value="1.0"/>
-        <mu2 value="0.9"/>
-        <kp value="10000000.0" />
-        <kd value="1.0" />
-        <fdir1 value="1 0 0"/>
-        <minDepth value="0.001" />
+    <gazebo reference="front_left_wheel">
+        <mu1>10</mu1>
+        <mu2>10</mu2>
+        <kp>10000000.0</kp>
+        <kd>1.0</kd>
+        <minDepth>0.01</minDepth>
+        <fdir1>1 0 0</fdir1>
         <maxContacts value="64"/>
     </gazebo>
-
+    <gazebo reference="front_right_wheel">
+        <mu1>10</mu1>
+        <mu2>10</mu2>
+        <kp>10000000.0</kp>
+        <kd>1.0</kd>
+        <minDepth>0.01</minDepth>
+        <fdir1>1 0 0</fdir1>
+        <maxContacts value="64"/>
+    </gazebo>
+    <gazebo reference="rear_left_wheel">
+        <mu1>10</mu1>
+        <mu2>10</mu2>
+        <kp>10000000.0</kp>
+        <kd>1.0</kd>
+        <minDepth>0.01</minDepth>
+        <fdir1>1 0 0</fdir1>
+        <maxContacts value="64"/>
+    </gazebo>
+    <gazebo reference="rear_right_wheel">
+        <mu1>10</mu1>
+        <mu2>10</mu2>
+        <kp>10000000.0</kp>
+        <kd>1.0</kd>
+        <minDepth>0.01</minDepth>
+        <fdir1>1 0 0</fdir1>
+        <maxContacts value="64"/>
+    </gazebo>
+    
     <!-- <gazebo>
         <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
             <updateRate>100.0</updateRate>

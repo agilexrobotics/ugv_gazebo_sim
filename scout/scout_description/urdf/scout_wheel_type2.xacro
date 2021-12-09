@@ -30,9 +30,9 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <xacro:macro name="scout_wheel_type2" params="wheel_prefix *joint_pose">
         <link name="${wheel_prefix}_wheel_link">
             <inertial>
-                <mass value="3" />
+                <mass value="8" />
                 <origin xyz="0 0 0" />
-                <inertia ixx="0.7171" ixy="0" ixz="0" iyy="0.1361" iyz="0" izz="0.7171" />
+                <inertia ixx="0.1171" ixy="0" ixz="0" iyy="0.1361" iyz="0" izz="0.1171" />
             </inertial>
             <visual>
                 <origin xyz="0 0 0" rpy="0 0 0" />
@@ -45,6 +45,11 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
                 <geometry>
                     <cylinder length="${wheel_length}" radius="${wheel_radius}" />
                 </geometry>
+                    <contact>
+                         <ode>
+                        <min_depth>0.001</min_depth>
+                         </ode>
+                    </contact>
             </collision>
         </link>
 
