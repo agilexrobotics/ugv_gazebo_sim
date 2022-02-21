@@ -46,6 +46,12 @@ sudo apt-get install ros-melodic-gazebo-ros
 sudo apt-get install ros-melodic-gazebo-ros-control
 ```
 
+​	Download and install joint-state-publisher-gui package.This package is used to visualize the joint control.
+
+```
+sudo apt-get install ros-melodic-joint-state-publisher-gui 
+```
+
 ​	Download and install rqt-robot-steering plug-in, rqt_robot_steering is a ROS tool closely related to robot motion control, it can send the control command of robot linear motion and steering motion, and the robot motion can be easily controlled through the sliding bar
 
 ```
@@ -135,7 +141,9 @@ source devel/setup.bash
 
 ​	Run the start file of limo and visualize the model in Rviz
 
+```
 roslaunch limo_description display_models.launch 
+```
 
 ![img](image/rviz.png) 
 
