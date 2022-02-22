@@ -45,6 +45,12 @@ sudo apt-get install ros-melodic-gazebo-ros
 sudo apt-get install ros-melodic-gazebo-ros-control
 ```
 
+​	Download and install joint-state-publisher-gui package.This package is used to visualize the joint control.
+
+```
+sudo apt-get install ros-melodic-joint-state-publisher-gui 
+```
+
 ​	Download and install teleop-twist-keyboard function package, telop-twist-keyboard is keyboard control function package, the robot can be controlled to move forward, left, right and backward through "i", "j", "l",and "," on the keyboard
 
 ```
