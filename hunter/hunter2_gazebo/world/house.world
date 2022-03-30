@@ -669,9 +669,9 @@
       <pose frame=''>-28.736 -20.5599 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>785 499000000</sim_time>
-      <real_time>806 592079716</real_time>
-      <wall_time>1633943991 260946485</wall_time>
+      <sim_time>0</sim_time>
+      <real_time>0</real_time>
+      <wall_time>0</wall_time>
       <iterations>785499</iterations>
       <model name='Gas Station'>
         <pose frame=''>-23.1704 21.4247 0 0 -0 0</pose>
