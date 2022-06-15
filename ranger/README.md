@@ -109,7 +109,7 @@ catkin_init_workspace
 ​		Download simulation model function package
 
 ```
-git clone https://github.com/agilexrobotics/ugv_sim/ranger.git
+git clone https://github.com/agilexrobotics/ugv_sim.git
 ```
 
 ​		Enter the ranger_mini_ws folder
@@ -171,7 +171,7 @@ source devel/setup.bash
 Start the simulation environment of ranger_mini, slide the sliding bar of Robot Steering plug-in to control robot movement
 
 ```
-roslaunch ranger_mini_gazebo launch_simulation.launch
+roslaunch ranger_mini_gazebo ranger_mini_empty_world.launch
 ```
 
 ![说明文字](image/gazebo.png) 
