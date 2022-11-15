@@ -1,0 +1,501 @@
+2022-11-04 10:11:09,661 INFO  Logger.cs: 70 - 
+--------------------------------------------------------------------------------
+2022-11-04 10:11:09,675 INFO  Logger.cs: 71 - Logging commencing for SW2URDF exporter
+2022-11-04 10:11:09,676 INFO  Logger.cs: 73 - Commit version 1.6.0-4-g7f85cfe
+2022-11-04 10:11:09,676 INFO  Logger.cs: 74 - Build version 1.6.7995.38578
+2022-11-04 10:11:09,694 INFO  SwAddin.cs: 192 - Attempting to connect to SW
+2022-11-04 10:11:09,694 INFO  SwAddin.cs: 197 - Setting up callbacks
+2022-11-04 10:11:09,694 INFO  SwAddin.cs: 201 - Setting up command manager
+2022-11-04 10:11:09,695 INFO  SwAddin.cs: 204 - Adding command manager
+2022-11-04 10:11:09,696 INFO  SwAddin.cs: 263 - Adding Assembly export to file menu
+2022-11-04 10:11:09,697 INFO  SwAddin.cs: 272 - Adding Part export to file menu
+2022-11-04 10:11:09,697 INFO  SwAddin.cs: 210 - Adding event handlers
+2022-11-04 10:11:09,704 INFO  SwAddin.cs: 217 - Connecting plugin to SolidWorks
+2022-11-04 10:11:27,126 INFO  SwAddin.cs: 294 - Assembly export called for file Autokit.SLDASM
+2022-11-04 10:11:29,135 INFO  SwAddin.cs: 313 - Saving assembly
+2022-11-04 10:11:29,745 INFO  SwAddin.cs: 316 - Opening property manager
+2022-11-04 10:11:29,778 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Autokit.SLDASM
+2022-11-04 10:11:29,788 INFO  ExportHelperExtension.cs: 1136 - Found 156 in Autokit.SLDASM
+2022-11-04 10:11:29,791 INFO  ExportHelperExtension.cs: 1145 - Found 2 features of type [CoordSys] in Autokit.SLDASM
+2022-11-04 10:11:29,791 INFO  ExportHelperExtension.cs: 1148 - Proceeding through assembly components
+2022-11-04 10:11:29,798 INFO  ExportHelperExtension.cs: 1160 - 34 components to check
+2022-11-04 10:11:29,799 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from RTK-NEWTON-2-1
+2022-11-04 10:11:29,799 INFO  ExportHelperExtension.cs: 1136 - Found 40 in RTK-NEWTON-2-1
+2022-11-04 10:11:29,799 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in RTK-NEWTON-2-1
+2022-11-04 10:11:29,799 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180005-A-1
+2022-11-04 10:11:29,800 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180005-A-1
+2022-11-04 10:11:29,800 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180005-A-1
+2022-11-04 10:11:29,800 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180014-A-1
+2022-11-04 10:11:29,801 INFO  ExportHelperExtension.cs: 1136 - Found 170 in M-D048-180014-A-1
+2022-11-04 10:11:29,801 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180014-A-1
+2022-11-04 10:11:29,801 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180011-A-2
+2022-11-04 10:11:29,802 INFO  ExportHelperExtension.cs: 1136 - Found 76 in M-D048-180011-A-2
+2022-11-04 10:11:29,805 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180011-A-2
+2022-11-04 10:11:29,805 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180015-A-1
+2022-11-04 10:11:29,882 INFO  ExportHelperExtension.cs: 1136 - Found 52 in M-D048-180015-A-1
+2022-11-04 10:11:29,883 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180015-A-1
+2022-11-04 10:11:29,883 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180009-A-1
+2022-11-04 10:11:29,883 INFO  ExportHelperExtension.cs: 1136 - Found 54 in M-D048-180009-A-1
+2022-11-04 10:11:29,883 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180009-A-1
+2022-11-04 10:11:29,884 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180008-A-1
+2022-11-04 10:11:29,884 INFO  ExportHelperExtension.cs: 1136 - Found 55 in M-D048-180008-A-1
+2022-11-04 10:11:29,885 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180008-A-1
+2022-11-04 10:11:29,885 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180005-A-2
+2022-11-04 10:11:29,885 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180005-A-2
+2022-11-04 10:11:29,885 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180005-A-2
+2022-11-04 10:11:29,886 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:11:29,886 INFO  ExportHelperExtension.cs: 1136 - Found 26 in 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:11:29,886 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:11:29,886 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180008-A-2
+2022-11-04 10:11:29,886 INFO  ExportHelperExtension.cs: 1136 - Found 55 in M-D048-180008-A-2
+2022-11-04 10:11:29,887 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180008-A-2
+2022-11-04 10:11:29,887 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from HUB-4-1
+2022-11-04 10:11:29,887 INFO  ExportHelperExtension.cs: 1136 - Found 36 in HUB-4-1
+2022-11-04 10:11:29,887 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in HUB-4-1
+2022-11-04 10:11:29,887 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180001-A-1
+2022-11-04 10:11:29,888 INFO  ExportHelperExtension.cs: 1136 - Found 129 in M-D048-180001-A-1
+2022-11-04 10:11:29,888 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180001-A-1
+2022-11-04 10:11:29,888 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 雷达控制盒-1
+2022-11-04 10:11:29,889 INFO  ExportHelperExtension.cs: 1136 - Found 60 in 雷达控制盒-1
+2022-11-04 10:11:29,889 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 雷达控制盒-1
+2022-11-04 10:11:29,889 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180004-A-2
+2022-11-04 10:11:29,889 INFO  ExportHelperExtension.cs: 1136 - Found 122 in M-D048-180004-A-2
+2022-11-04 10:11:29,890 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180004-A-2
+2022-11-04 10:11:29,890 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 华为路由器-1
+2022-11-04 10:11:29,890 INFO  ExportHelperExtension.cs: 1136 - Found 48 in 华为路由器-1
+2022-11-04 10:11:29,890 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 华为路由器-1
+2022-11-04 10:11:29,891 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180007-A-1
+2022-11-04 10:11:29,891 INFO  ExportHelperExtension.cs: 1136 - Found 132 in M-D048-180007-A-1
+2022-11-04 10:11:29,891 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180007-A-1
+2022-11-04 10:11:29,891 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from ch110_shell-1
+2022-11-04 10:11:29,892 INFO  ExportHelperExtension.cs: 1136 - Found 26 in ch110_shell-1
+2022-11-04 10:11:29,892 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in ch110_shell-1
+2022-11-04 10:11:29,892 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 卫星天线-蘑菇头-2
+2022-11-04 10:11:29,892 INFO  ExportHelperExtension.cs: 1136 - Found 31 in 卫星天线-蘑菇头-2
+2022-11-04 10:11:29,893 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 卫星天线-蘑菇头-2
+2022-11-04 10:11:29,893 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180006-A-3
+2022-11-04 10:11:29,893 INFO  ExportHelperExtension.cs: 1136 - Found 34 in M-D048-180006-A-3
+2022-11-04 10:11:29,893 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180006-A-3
+2022-11-04 10:11:29,893 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 卫星天线-蘑菇头-1
+2022-11-04 10:11:29,894 INFO  ExportHelperExtension.cs: 1136 - Found 31 in 卫星天线-蘑菇头-1
+2022-11-04 10:11:29,894 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 卫星天线-蘑菇头-1
+2022-11-04 10:11:29,894 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 14寸屏幕-1
+2022-11-04 10:11:29,894 INFO  ExportHelperExtension.cs: 1136 - Found 46 in 14寸屏幕-1
+2022-11-04 10:11:29,894 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 14寸屏幕-1
+2022-11-04 10:11:29,895 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180002-A-1
+2022-11-04 10:11:29,895 INFO  ExportHelperExtension.cs: 1136 - Found 102 in M-D048-180002-A-1
+2022-11-04 10:11:29,895 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180002-A-1
+2022-11-04 10:11:29,895 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180013-A-2
+2022-11-04 10:11:29,896 INFO  ExportHelperExtension.cs: 1136 - Found 40 in M-D048-180013-A-2
+2022-11-04 10:11:29,896 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180013-A-2
+2022-11-04 10:11:29,896 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:11:29,896 INFO  ExportHelperExtension.cs: 1136 - Found 93 in IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:11:29,897 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:11:29,897 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from D-D005-003006-C-1
+2022-11-04 10:11:29,897 INFO  ExportHelperExtension.cs: 1136 - Found 43 in D-D005-003006-C-1
+2022-11-04 10:11:29,897 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in D-D005-003006-C-1
+2022-11-04 10:11:29,897 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180013-A-1
+2022-11-04 10:11:29,898 INFO  ExportHelperExtension.cs: 1136 - Found 40 in M-D048-180013-A-1
+2022-11-04 10:11:29,898 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180013-A-1
+2022-11-04 10:11:29,898 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180010-A-1
+2022-11-04 10:11:29,898 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180010-A-1
+2022-11-04 10:11:29,899 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180010-A-1
+2022-11-04 10:11:29,899 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from RS-LIDAR-16-1
+2022-11-04 10:11:29,899 INFO  ExportHelperExtension.cs: 1136 - Found 32 in RS-LIDAR-16-1
+2022-11-04 10:11:29,899 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in RS-LIDAR-16-1
+2022-11-04 10:11:29,899 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180003-A-1
+2022-11-04 10:11:29,900 INFO  ExportHelperExtension.cs: 1136 - Found 94 in M-D048-180003-A-1
+2022-11-04 10:11:29,900 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180003-A-1
+2022-11-04 10:11:29,900 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180012-A-2
+2022-11-04 10:11:29,901 INFO  ExportHelperExtension.cs: 1136 - Found 52 in M-D048-180012-A-2
+2022-11-04 10:11:29,901 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180012-A-2
+2022-11-04 10:11:29,901 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from D-D005-003003-C-1
+2022-11-04 10:11:29,901 INFO  ExportHelperExtension.cs: 1136 - Found 49 in D-D005-003003-C-1
+2022-11-04 10:11:29,902 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in D-D005-003003-C-1
+2022-11-04 10:11:29,902 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-C254-240001-A-1
+2022-11-04 10:11:29,902 INFO  ExportHelperExtension.cs: 1136 - Found 48 in M-C254-240001-A-1
+2022-11-04 10:11:29,902 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-C254-240001-A-1
+2022-11-04 10:11:29,902 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180006-A-1
+2022-11-04 10:11:29,903 INFO  ExportHelperExtension.cs: 1136 - Found 34 in M-D048-180006-A-1
+2022-11-04 10:11:29,903 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180006-A-1
+2022-11-04 10:11:29,903 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from C.600.0060大E7DS-1
+2022-11-04 10:11:29,903 INFO  ExportHelperExtension.cs: 1136 - Found 38 in C.600.0060大E7DS-1
+2022-11-04 10:11:29,903 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in C.600.0060大E7DS-1
+2022-11-04 10:11:29,904 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Autokit.SLDASM
+2022-11-04 10:11:29,904 INFO  ExportHelperExtension.cs: 1136 - Found 156 in Autokit.SLDASM
+2022-11-04 10:11:29,904 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Autokit.SLDASM
+2022-11-04 10:11:29,904 INFO  ExportHelperExtension.cs: 1148 - Proceeding through assembly components
+2022-11-04 10:11:29,905 INFO  ExportHelperExtension.cs: 1160 - 34 components to check
+2022-11-04 10:11:29,905 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from RTK-NEWTON-2-1
+2022-11-04 10:11:29,905 INFO  ExportHelperExtension.cs: 1136 - Found 40 in RTK-NEWTON-2-1
+2022-11-04 10:11:29,905 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in RTK-NEWTON-2-1
+2022-11-04 10:11:29,905 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180005-A-1
+2022-11-04 10:11:29,906 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180005-A-1
+2022-11-04 10:11:29,906 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180005-A-1
+2022-11-04 10:11:29,906 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180014-A-1
+2022-11-04 10:11:29,907 INFO  ExportHelperExtension.cs: 1136 - Found 170 in M-D048-180014-A-1
+2022-11-04 10:11:29,907 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in M-D048-180014-A-1
+2022-11-04 10:11:29,907 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180011-A-2
+2022-11-04 10:11:29,907 INFO  ExportHelperExtension.cs: 1136 - Found 76 in M-D048-180011-A-2
+2022-11-04 10:11:29,908 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180011-A-2
+2022-11-04 10:11:29,908 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180015-A-1
+2022-11-04 10:11:29,908 INFO  ExportHelperExtension.cs: 1136 - Found 52 in M-D048-180015-A-1
+2022-11-04 10:11:29,908 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180015-A-1
+2022-11-04 10:11:29,909 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180009-A-1
+2022-11-04 10:11:29,909 INFO  ExportHelperExtension.cs: 1136 - Found 54 in M-D048-180009-A-1
+2022-11-04 10:11:29,909 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180009-A-1
+2022-11-04 10:11:29,909 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180008-A-1
+2022-11-04 10:11:29,909 INFO  ExportHelperExtension.cs: 1136 - Found 55 in M-D048-180008-A-1
+2022-11-04 10:11:29,910 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180008-A-1
+2022-11-04 10:11:29,910 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180005-A-2
+2022-11-04 10:11:29,910 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180005-A-2
+2022-11-04 10:11:29,910 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180005-A-2
+2022-11-04 10:11:29,910 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:11:29,911 INFO  ExportHelperExtension.cs: 1136 - Found 26 in 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:11:29,911 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:11:29,911 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180008-A-2
+2022-11-04 10:11:29,912 INFO  ExportHelperExtension.cs: 1136 - Found 55 in M-D048-180008-A-2
+2022-11-04 10:11:29,912 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180008-A-2
+2022-11-04 10:11:29,912 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from HUB-4-1
+2022-11-04 10:11:29,913 INFO  ExportHelperExtension.cs: 1136 - Found 36 in HUB-4-1
+2022-11-04 10:11:29,913 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in HUB-4-1
+2022-11-04 10:11:29,913 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180001-A-1
+2022-11-04 10:11:29,914 INFO  ExportHelperExtension.cs: 1136 - Found 129 in M-D048-180001-A-1
+2022-11-04 10:11:29,914 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180001-A-1
+2022-11-04 10:11:29,914 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 雷达控制盒-1
+2022-11-04 10:11:29,914 INFO  ExportHelperExtension.cs: 1136 - Found 60 in 雷达控制盒-1
+2022-11-04 10:11:29,915 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 雷达控制盒-1
+2022-11-04 10:11:29,915 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180004-A-2
+2022-11-04 10:11:29,916 INFO  ExportHelperExtension.cs: 1136 - Found 122 in M-D048-180004-A-2
+2022-11-04 10:11:29,916 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180004-A-2
+2022-11-04 10:11:29,916 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 华为路由器-1
+2022-11-04 10:11:29,916 INFO  ExportHelperExtension.cs: 1136 - Found 48 in 华为路由器-1
+2022-11-04 10:11:29,917 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 华为路由器-1
+2022-11-04 10:11:29,917 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180007-A-1
+2022-11-04 10:11:29,917 INFO  ExportHelperExtension.cs: 1136 - Found 132 in M-D048-180007-A-1
+2022-11-04 10:11:29,917 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180007-A-1
+2022-11-04 10:11:29,918 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from ch110_shell-1
+2022-11-04 10:11:29,918 INFO  ExportHelperExtension.cs: 1136 - Found 26 in ch110_shell-1
+2022-11-04 10:11:29,918 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in ch110_shell-1
+2022-11-04 10:11:29,918 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 卫星天线-蘑菇头-2
+2022-11-04 10:11:29,918 INFO  ExportHelperExtension.cs: 1136 - Found 31 in 卫星天线-蘑菇头-2
+2022-11-04 10:11:29,919 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 卫星天线-蘑菇头-2
+2022-11-04 10:11:29,919 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180006-A-3
+2022-11-04 10:11:29,919 INFO  ExportHelperExtension.cs: 1136 - Found 34 in M-D048-180006-A-3
+2022-11-04 10:11:29,919 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180006-A-3
+2022-11-04 10:11:29,919 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 卫星天线-蘑菇头-1
+2022-11-04 10:11:29,919 INFO  ExportHelperExtension.cs: 1136 - Found 31 in 卫星天线-蘑菇头-1
+2022-11-04 10:11:29,925 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 卫星天线-蘑菇头-1
+2022-11-04 10:11:29,925 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 14寸屏幕-1
+2022-11-04 10:11:29,946 INFO  ExportHelperExtension.cs: 1136 - Found 46 in 14寸屏幕-1
+2022-11-04 10:11:29,946 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 14寸屏幕-1
+2022-11-04 10:11:29,946 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180002-A-1
+2022-11-04 10:11:29,947 INFO  ExportHelperExtension.cs: 1136 - Found 102 in M-D048-180002-A-1
+2022-11-04 10:11:29,947 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180002-A-1
+2022-11-04 10:11:29,947 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180013-A-2
+2022-11-04 10:11:29,947 INFO  ExportHelperExtension.cs: 1136 - Found 40 in M-D048-180013-A-2
+2022-11-04 10:11:29,948 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180013-A-2
+2022-11-04 10:11:29,948 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:11:29,948 INFO  ExportHelperExtension.cs: 1136 - Found 93 in IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:11:29,948 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:11:29,948 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from D-D005-003006-C-1
+2022-11-04 10:11:29,949 INFO  ExportHelperExtension.cs: 1136 - Found 43 in D-D005-003006-C-1
+2022-11-04 10:11:29,949 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in D-D005-003006-C-1
+2022-11-04 10:11:29,949 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180013-A-1
+2022-11-04 10:11:29,949 INFO  ExportHelperExtension.cs: 1136 - Found 40 in M-D048-180013-A-1
+2022-11-04 10:11:29,949 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180013-A-1
+2022-11-04 10:11:29,950 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180010-A-1
+2022-11-04 10:11:29,950 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180010-A-1
+2022-11-04 10:11:29,950 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180010-A-1
+2022-11-04 10:11:29,950 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from RS-LIDAR-16-1
+2022-11-04 10:11:29,951 INFO  ExportHelperExtension.cs: 1136 - Found 32 in RS-LIDAR-16-1
+2022-11-04 10:11:29,951 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in RS-LIDAR-16-1
+2022-11-04 10:11:29,951 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180003-A-1
+2022-11-04 10:11:29,951 INFO  ExportHelperExtension.cs: 1136 - Found 94 in M-D048-180003-A-1
+2022-11-04 10:11:29,952 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180003-A-1
+2022-11-04 10:11:29,952 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180012-A-2
+2022-11-04 10:11:29,952 INFO  ExportHelperExtension.cs: 1136 - Found 52 in M-D048-180012-A-2
+2022-11-04 10:11:29,952 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180012-A-2
+2022-11-04 10:11:29,952 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from D-D005-003003-C-1
+2022-11-04 10:11:29,953 INFO  ExportHelperExtension.cs: 1136 - Found 49 in D-D005-003003-C-1
+2022-11-04 10:11:29,953 INFO  ExportHelperExtension.cs: 1145 - Found 4 features of type [RefAxis] in D-D005-003003-C-1
+2022-11-04 10:11:29,953 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-C254-240001-A-1
+2022-11-04 10:11:29,953 INFO  ExportHelperExtension.cs: 1136 - Found 48 in M-C254-240001-A-1
+2022-11-04 10:11:29,953 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-C254-240001-A-1
+2022-11-04 10:11:29,954 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180006-A-1
+2022-11-04 10:11:29,954 INFO  ExportHelperExtension.cs: 1136 - Found 34 in M-D048-180006-A-1
+2022-11-04 10:11:29,954 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180006-A-1
+2022-11-04 10:11:29,954 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from C.600.0060大E7DS-1
+2022-11-04 10:11:29,954 INFO  ExportHelperExtension.cs: 1136 - Found 38 in C.600.0060大E7DS-1
+2022-11-04 10:11:29,955 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in C.600.0060大E7DS-1
+2022-11-04 10:11:30,367 INFO  SwAddin.cs: 339 - Loading config tree
+2022-11-04 10:11:30,370 INFO  ExportPropertyManagerExtension.cs: 520 - Starting new configuration
+2022-11-04 10:11:30,371 INFO  SwAddin.cs: 344 - Showing property manager
+2022-11-04 10:11:58,473 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:12:01,537 INFO  ExportPropertyManager.cs: 1136 - OnNumberBoxTrackingCompleted called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:15:40,143 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:15:44,845 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:15:48,060 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:15:48,647 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:15:48,667 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:15:48,681 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:15:48,713 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:15:48,745 INFO  ExportPropertyManager.cs: 1018 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:15:52,698 INFO  ExportPropertyManager.cs: 422 - Configuration saved
+2022-11-04 10:15:52,926 INFO  ExportHelperExtension.cs: 347 - Creating joint box_Link
+2022-11-04 10:15:53,108 WARN  ExportHelperExtension.cs: 351 - Creating joint from parent base_link to child box_Link failed
+2022-11-04 10:15:53,575 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from Autokit.SLDASM
+2022-11-04 10:15:53,578 INFO  ExportHelperExtension.cs: 1136 - Found 157 in Autokit.SLDASM
+2022-11-04 10:15:53,578 INFO  ExportHelperExtension.cs: 1145 - Found 2 features of type [CoordSys] in Autokit.SLDASM
+2022-11-04 10:15:53,578 INFO  ExportHelperExtension.cs: 1148 - Proceeding through assembly components
+2022-11-04 10:15:53,579 INFO  ExportHelperExtension.cs: 1160 - 34 components to check
+2022-11-04 10:15:53,582 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from RTK-NEWTON-2-1
+2022-11-04 10:15:53,637 INFO  ExportHelperExtension.cs: 1136 - Found 40 in RTK-NEWTON-2-1
+2022-11-04 10:15:53,638 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in RTK-NEWTON-2-1
+2022-11-04 10:15:53,638 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180005-A-1
+2022-11-04 10:15:53,639 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180005-A-1
+2022-11-04 10:15:53,639 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180005-A-1
+2022-11-04 10:15:53,639 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180014-A-1
+2022-11-04 10:15:53,640 INFO  ExportHelperExtension.cs: 1136 - Found 170 in M-D048-180014-A-1
+2022-11-04 10:15:53,640 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180014-A-1
+2022-11-04 10:15:53,640 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180011-A-2
+2022-11-04 10:15:53,641 INFO  ExportHelperExtension.cs: 1136 - Found 76 in M-D048-180011-A-2
+2022-11-04 10:15:53,641 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180011-A-2
+2022-11-04 10:15:53,641 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180015-A-1
+2022-11-04 10:15:53,641 INFO  ExportHelperExtension.cs: 1136 - Found 52 in M-D048-180015-A-1
+2022-11-04 10:15:53,642 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180015-A-1
+2022-11-04 10:15:53,642 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180009-A-1
+2022-11-04 10:15:53,642 INFO  ExportHelperExtension.cs: 1136 - Found 54 in M-D048-180009-A-1
+2022-11-04 10:15:53,642 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180009-A-1
+2022-11-04 10:15:53,642 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180008-A-1
+2022-11-04 10:15:53,643 INFO  ExportHelperExtension.cs: 1136 - Found 55 in M-D048-180008-A-1
+2022-11-04 10:15:53,643 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180008-A-1
+2022-11-04 10:15:53,643 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180005-A-2
+2022-11-04 10:15:53,643 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180005-A-2
+2022-11-04 10:15:53,644 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180005-A-2
+2022-11-04 10:15:53,644 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:15:53,644 INFO  ExportHelperExtension.cs: 1136 - Found 26 in 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:15:53,644 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:15:53,644 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180008-A-2
+2022-11-04 10:15:53,645 INFO  ExportHelperExtension.cs: 1136 - Found 55 in M-D048-180008-A-2
+2022-11-04 10:15:53,645 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180008-A-2
+2022-11-04 10:15:53,645 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from HUB-4-1
+2022-11-04 10:15:53,645 INFO  ExportHelperExtension.cs: 1136 - Found 36 in HUB-4-1
+2022-11-04 10:15:53,646 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in HUB-4-1
+2022-11-04 10:15:53,646 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180001-A-1
+2022-11-04 10:15:53,646 INFO  ExportHelperExtension.cs: 1136 - Found 129 in M-D048-180001-A-1
+2022-11-04 10:15:53,646 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180001-A-1
+2022-11-04 10:15:53,647 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 雷达控制盒-1
+2022-11-04 10:15:53,647 INFO  ExportHelperExtension.cs: 1136 - Found 60 in 雷达控制盒-1
+2022-11-04 10:15:53,647 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 雷达控制盒-1
+2022-11-04 10:15:53,647 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180004-A-2
+2022-11-04 10:15:53,648 INFO  ExportHelperExtension.cs: 1136 - Found 122 in M-D048-180004-A-2
+2022-11-04 10:15:53,648 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180004-A-2
+2022-11-04 10:15:53,648 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 华为路由器-1
+2022-11-04 10:15:53,648 INFO  ExportHelperExtension.cs: 1136 - Found 48 in 华为路由器-1
+2022-11-04 10:15:53,649 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 华为路由器-1
+2022-11-04 10:15:53,649 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180007-A-1
+2022-11-04 10:15:53,649 INFO  ExportHelperExtension.cs: 1136 - Found 132 in M-D048-180007-A-1
+2022-11-04 10:15:53,650 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180007-A-1
+2022-11-04 10:15:53,650 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from ch110_shell-1
+2022-11-04 10:15:53,650 INFO  ExportHelperExtension.cs: 1136 - Found 26 in ch110_shell-1
+2022-11-04 10:15:53,650 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in ch110_shell-1
+2022-11-04 10:15:53,650 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 卫星天线-蘑菇头-2
+2022-11-04 10:15:53,651 INFO  ExportHelperExtension.cs: 1136 - Found 31 in 卫星天线-蘑菇头-2
+2022-11-04 10:15:53,651 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 卫星天线-蘑菇头-2
+2022-11-04 10:15:53,651 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180006-A-3
+2022-11-04 10:15:53,651 INFO  ExportHelperExtension.cs: 1136 - Found 34 in M-D048-180006-A-3
+2022-11-04 10:15:53,651 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180006-A-3
+2022-11-04 10:15:53,652 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 卫星天线-蘑菇头-1
+2022-11-04 10:15:53,652 INFO  ExportHelperExtension.cs: 1136 - Found 31 in 卫星天线-蘑菇头-1
+2022-11-04 10:15:53,652 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 卫星天线-蘑菇头-1
+2022-11-04 10:15:53,652 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from 14寸屏幕-1
+2022-11-04 10:15:53,652 INFO  ExportHelperExtension.cs: 1136 - Found 46 in 14寸屏幕-1
+2022-11-04 10:15:53,653 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in 14寸屏幕-1
+2022-11-04 10:15:53,653 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180002-A-1
+2022-11-04 10:15:53,653 INFO  ExportHelperExtension.cs: 1136 - Found 102 in M-D048-180002-A-1
+2022-11-04 10:15:53,654 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180002-A-1
+2022-11-04 10:15:53,654 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180013-A-2
+2022-11-04 10:15:53,654 INFO  ExportHelperExtension.cs: 1136 - Found 40 in M-D048-180013-A-2
+2022-11-04 10:15:53,654 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180013-A-2
+2022-11-04 10:15:53,654 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:15:53,655 INFO  ExportHelperExtension.cs: 1136 - Found 93 in IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:15:53,655 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:15:53,655 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from D-D005-003006-C-1
+2022-11-04 10:15:53,655 INFO  ExportHelperExtension.cs: 1136 - Found 43 in D-D005-003006-C-1
+2022-11-04 10:15:53,656 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in D-D005-003006-C-1
+2022-11-04 10:15:53,656 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180013-A-1
+2022-11-04 10:15:53,656 INFO  ExportHelperExtension.cs: 1136 - Found 40 in M-D048-180013-A-1
+2022-11-04 10:15:53,656 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180013-A-1
+2022-11-04 10:15:53,656 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180010-A-1
+2022-11-04 10:15:53,657 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180010-A-1
+2022-11-04 10:15:53,657 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180010-A-1
+2022-11-04 10:15:53,657 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from RS-LIDAR-16-1
+2022-11-04 10:15:53,657 INFO  ExportHelperExtension.cs: 1136 - Found 32 in RS-LIDAR-16-1
+2022-11-04 10:15:53,658 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in RS-LIDAR-16-1
+2022-11-04 10:15:53,658 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180003-A-1
+2022-11-04 10:15:53,658 INFO  ExportHelperExtension.cs: 1136 - Found 94 in M-D048-180003-A-1
+2022-11-04 10:15:53,658 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180003-A-1
+2022-11-04 10:15:53,659 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180012-A-2
+2022-11-04 10:15:53,659 INFO  ExportHelperExtension.cs: 1136 - Found 52 in M-D048-180012-A-2
+2022-11-04 10:15:53,659 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180012-A-2
+2022-11-04 10:15:53,659 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from D-D005-003003-C-1
+2022-11-04 10:15:53,660 INFO  ExportHelperExtension.cs: 1136 - Found 49 in D-D005-003003-C-1
+2022-11-04 10:15:53,660 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in D-D005-003003-C-1
+2022-11-04 10:15:53,660 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-C254-240001-A-1
+2022-11-04 10:15:53,660 INFO  ExportHelperExtension.cs: 1136 - Found 48 in M-C254-240001-A-1
+2022-11-04 10:15:53,660 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-C254-240001-A-1
+2022-11-04 10:15:53,661 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from M-D048-180006-A-1
+2022-11-04 10:15:53,661 INFO  ExportHelperExtension.cs: 1136 - Found 34 in M-D048-180006-A-1
+2022-11-04 10:15:53,661 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in M-D048-180006-A-1
+2022-11-04 10:15:53,661 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [CoordSys] from C.600.0060大E7DS-1
+2022-11-04 10:15:53,662 INFO  ExportHelperExtension.cs: 1136 - Found 38 in C.600.0060大E7DS-1
+2022-11-04 10:15:53,662 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [CoordSys] in C.600.0060大E7DS-1
+2022-11-04 10:15:53,662 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from Autokit.SLDASM
+2022-11-04 10:15:53,662 INFO  ExportHelperExtension.cs: 1136 - Found 157 in Autokit.SLDASM
+2022-11-04 10:15:53,663 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in Autokit.SLDASM
+2022-11-04 10:15:53,663 INFO  ExportHelperExtension.cs: 1148 - Proceeding through assembly components
+2022-11-04 10:15:53,663 INFO  ExportHelperExtension.cs: 1160 - 34 components to check
+2022-11-04 10:15:53,663 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from RTK-NEWTON-2-1
+2022-11-04 10:15:53,663 INFO  ExportHelperExtension.cs: 1136 - Found 40 in RTK-NEWTON-2-1
+2022-11-04 10:15:53,664 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in RTK-NEWTON-2-1
+2022-11-04 10:15:53,664 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180005-A-1
+2022-11-04 10:15:53,664 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180005-A-1
+2022-11-04 10:15:53,666 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180005-A-1
+2022-11-04 10:15:53,667 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180014-A-1
+2022-11-04 10:15:53,686 INFO  ExportHelperExtension.cs: 1136 - Found 170 in M-D048-180014-A-1
+2022-11-04 10:15:53,686 INFO  ExportHelperExtension.cs: 1145 - Found 1 features of type [RefAxis] in M-D048-180014-A-1
+2022-11-04 10:15:53,687 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180011-A-2
+2022-11-04 10:15:53,687 INFO  ExportHelperExtension.cs: 1136 - Found 76 in M-D048-180011-A-2
+2022-11-04 10:15:53,687 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180011-A-2
+2022-11-04 10:15:53,687 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180015-A-1
+2022-11-04 10:15:53,688 INFO  ExportHelperExtension.cs: 1136 - Found 52 in M-D048-180015-A-1
+2022-11-04 10:15:53,688 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180015-A-1
+2022-11-04 10:15:53,688 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180009-A-1
+2022-11-04 10:15:53,688 INFO  ExportHelperExtension.cs: 1136 - Found 54 in M-D048-180009-A-1
+2022-11-04 10:15:53,689 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180009-A-1
+2022-11-04 10:15:53,689 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180008-A-1
+2022-11-04 10:15:53,689 INFO  ExportHelperExtension.cs: 1136 - Found 55 in M-D048-180008-A-1
+2022-11-04 10:15:53,689 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180008-A-1
+2022-11-04 10:15:53,689 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180005-A-2
+2022-11-04 10:15:53,690 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180005-A-2
+2022-11-04 10:15:53,690 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180005-A-2
+2022-11-04 10:15:53,690 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:15:53,690 INFO  ExportHelperExtension.cs: 1136 - Found 26 in 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:15:53,690 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 12V-24V-5V 20A 100W Converter-1
+2022-11-04 10:15:53,691 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180008-A-2
+2022-11-04 10:15:53,691 INFO  ExportHelperExtension.cs: 1136 - Found 55 in M-D048-180008-A-2
+2022-11-04 10:15:53,691 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180008-A-2
+2022-11-04 10:15:53,691 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from HUB-4-1
+2022-11-04 10:15:53,691 INFO  ExportHelperExtension.cs: 1136 - Found 36 in HUB-4-1
+2022-11-04 10:15:53,692 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in HUB-4-1
+2022-11-04 10:15:53,692 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180001-A-1
+2022-11-04 10:15:53,692 INFO  ExportHelperExtension.cs: 1136 - Found 129 in M-D048-180001-A-1
+2022-11-04 10:15:53,693 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180001-A-1
+2022-11-04 10:15:53,693 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 雷达控制盒-1
+2022-11-04 10:15:53,693 INFO  ExportHelperExtension.cs: 1136 - Found 60 in 雷达控制盒-1
+2022-11-04 10:15:53,693 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 雷达控制盒-1
+2022-11-04 10:15:53,693 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180004-A-2
+2022-11-04 10:15:53,694 INFO  ExportHelperExtension.cs: 1136 - Found 122 in M-D048-180004-A-2
+2022-11-04 10:15:53,694 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180004-A-2
+2022-11-04 10:15:53,694 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 华为路由器-1
+2022-11-04 10:15:53,694 INFO  ExportHelperExtension.cs: 1136 - Found 48 in 华为路由器-1
+2022-11-04 10:15:53,695 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 华为路由器-1
+2022-11-04 10:15:53,695 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180007-A-1
+2022-11-04 10:15:53,695 INFO  ExportHelperExtension.cs: 1136 - Found 132 in M-D048-180007-A-1
+2022-11-04 10:15:53,695 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180007-A-1
+2022-11-04 10:15:53,696 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from ch110_shell-1
+2022-11-04 10:15:53,696 INFO  ExportHelperExtension.cs: 1136 - Found 26 in ch110_shell-1
+2022-11-04 10:15:53,696 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in ch110_shell-1
+2022-11-04 10:15:53,696 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 卫星天线-蘑菇头-2
+2022-11-04 10:15:53,696 INFO  ExportHelperExtension.cs: 1136 - Found 31 in 卫星天线-蘑菇头-2
+2022-11-04 10:15:53,697 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 卫星天线-蘑菇头-2
+2022-11-04 10:15:53,697 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180006-A-3
+2022-11-04 10:15:53,697 INFO  ExportHelperExtension.cs: 1136 - Found 34 in M-D048-180006-A-3
+2022-11-04 10:15:53,697 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180006-A-3
+2022-11-04 10:15:53,697 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 卫星天线-蘑菇头-1
+2022-11-04 10:15:53,698 INFO  ExportHelperExtension.cs: 1136 - Found 31 in 卫星天线-蘑菇头-1
+2022-11-04 10:15:53,698 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 卫星天线-蘑菇头-1
+2022-11-04 10:15:53,698 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from 14寸屏幕-1
+2022-11-04 10:15:53,698 INFO  ExportHelperExtension.cs: 1136 - Found 46 in 14寸屏幕-1
+2022-11-04 10:15:53,698 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in 14寸屏幕-1
+2022-11-04 10:15:53,699 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180002-A-1
+2022-11-04 10:15:53,699 INFO  ExportHelperExtension.cs: 1136 - Found 102 in M-D048-180002-A-1
+2022-11-04 10:15:53,699 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180002-A-1
+2022-11-04 10:15:53,699 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180013-A-2
+2022-11-04 10:15:53,700 INFO  ExportHelperExtension.cs: 1136 - Found 40 in M-D048-180013-A-2
+2022-11-04 10:15:53,700 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180013-A-2
+2022-11-04 10:15:53,700 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:15:53,700 INFO  ExportHelperExtension.cs: 1136 - Found 93 in IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:15:53,700 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in IntelRealsense_D435(i)_Multibody-1
+2022-11-04 10:15:53,701 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from D-D005-003006-C-1
+2022-11-04 10:15:53,701 INFO  ExportHelperExtension.cs: 1136 - Found 43 in D-D005-003006-C-1
+2022-11-04 10:15:53,701 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in D-D005-003006-C-1
+2022-11-04 10:15:53,701 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180013-A-1
+2022-11-04 10:15:53,701 INFO  ExportHelperExtension.cs: 1136 - Found 40 in M-D048-180013-A-1
+2022-11-04 10:15:53,702 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180013-A-1
+2022-11-04 10:15:53,702 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180010-A-1
+2022-11-04 10:15:53,703 INFO  ExportHelperExtension.cs: 1136 - Found 72 in M-D048-180010-A-1
+2022-11-04 10:15:53,703 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180010-A-1
+2022-11-04 10:15:53,703 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from RS-LIDAR-16-1
+2022-11-04 10:15:53,704 INFO  ExportHelperExtension.cs: 1136 - Found 32 in RS-LIDAR-16-1
+2022-11-04 10:15:53,704 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in RS-LIDAR-16-1
+2022-11-04 10:15:53,704 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180003-A-1
+2022-11-04 10:15:53,704 INFO  ExportHelperExtension.cs: 1136 - Found 94 in M-D048-180003-A-1
+2022-11-04 10:15:53,705 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180003-A-1
+2022-11-04 10:15:53,705 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180012-A-2
+2022-11-04 10:15:53,705 INFO  ExportHelperExtension.cs: 1136 - Found 52 in M-D048-180012-A-2
+2022-11-04 10:15:53,705 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180012-A-2
+2022-11-04 10:15:53,706 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from D-D005-003003-C-1
+2022-11-04 10:15:53,706 INFO  ExportHelperExtension.cs: 1136 - Found 49 in D-D005-003003-C-1
+2022-11-04 10:15:53,706 INFO  ExportHelperExtension.cs: 1145 - Found 4 features of type [RefAxis] in D-D005-003003-C-1
+2022-11-04 10:15:53,706 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-C254-240001-A-1
+2022-11-04 10:15:53,706 INFO  ExportHelperExtension.cs: 1136 - Found 48 in M-C254-240001-A-1
+2022-11-04 10:15:53,707 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-C254-240001-A-1
+2022-11-04 10:15:53,707 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from M-D048-180006-A-1
+2022-11-04 10:15:53,707 INFO  ExportHelperExtension.cs: 1136 - Found 34 in M-D048-180006-A-1
+2022-11-04 10:15:53,707 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in M-D048-180006-A-1
+2022-11-04 10:15:53,708 INFO  ExportHelperExtension.cs: 1125 - Retrieving features of type [RefAxis] from C.600.0060大E7DS-1
+2022-11-04 10:15:53,708 INFO  ExportHelperExtension.cs: 1136 - Found 38 in C.600.0060大E7DS-1
+2022-11-04 10:15:53,708 INFO  ExportHelperExtension.cs: 1145 - Found 0 features of type [RefAxis] in C.600.0060大E7DS-1
+2022-11-04 10:15:53,751 INFO  ExportPropertyManager.cs: 1142 - AfterClose called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2022-11-04 10:16:13,170 INFO  AssemblyExportForm.cs: 253 - Completing URDF export
+2022-11-04 10:16:13,189 INFO  ConfigurationSerialization.cs: 276 - URDF Configuration found
+<Link z:Id="i1" xmlns="http://schemas.datacontract.org/2004/07/SW2URDF" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/"><Attributes><Attribute z:Id="i2"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">base_link</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i3" i:type="Inertial"><Attributes/><ChildElements><URDFElement z:Id="i4" i:type="Origin"><Attributes><Attribute z:Id="i5"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i6"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i6"/><XYZAttribute z:Ref="i5"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i7" i:type="Mass"><Attributes><Attribute z:Id="i8"><AttributeType>value</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>mass</ElementName><required>false</required><ValueAttribute z:Ref="i8"/></URDFElement><URDFElement z:Id="i9" i:type="Inertia"><Attributes><Attribute z:Id="i10"><AttributeType>ixx</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i11"><AttributeType>ixy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i12"><AttributeType>ixz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i13"><AttributeType>iyy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i14"><AttributeType>iyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i15"><AttributeType>izz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>inertia</ElementName><required>false</required><IxxAttribute z:Ref="i10"/><IxyAttribute z:Ref="i11"/><IxzAttribute z:Ref="i12"/><IyyAttribute z:Ref="i13"/><IyzAttribute z:Ref="i14"/><IzzAttribute z:Ref="i15"/></URDFElement></ChildElements><ElementName>inertial</ElementName><required>false</required><Inertia z:Ref="i9"/><Mass z:Ref="i7"/><Origin z:Ref="i4"/></URDFElement><URDFElement z:Id="i16" i:type="Visual"><Attributes/><ChildElements><URDFElement z:Id="i17" i:type="Origin"><Attributes><Attribute z:Id="i18"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i19"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i19"/><XYZAttribute z:Ref="i18"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i20" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i21" i:type="Mesh"><Attributes><Attribute z:Id="i22"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i22"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i21"/></URDFElement><URDFElement z:Id="i23" i:type="Material"><Attributes><Attribute z:Id="i24"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i25" i:type="Color"><Attributes><Attribute z:Id="i26"><AttributeType>rgba</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>color</ElementName><required>false</required><RGBAAttribute z:Ref="i26"/></URDFElement><URDFElement z:Id="i27" i:type="Texture"><Attributes><Attribute z:Id="i28"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>texture</ElementName><required>false</required><FilenameAttribute z:Ref="i28"/><wFilename/></URDFElement></ChildElements><ElementName>material</ElementName><required>false</required><Color z:Ref="i25"/><NameAttribute z:Ref="i24"/><Texture z:Ref="i27"/></URDFElement></ChildElements><ElementName>visual</ElementName><required>false</required><Geometry z:Ref="i20"/><Material z:Ref="i23"/><Origin z:Ref="i17"/></URDFElement><URDFElement z:Id="i29" i:type="Collision"><Attributes/><ChildElements><URDFElement z:Id="i30" i:type="Origin"><Attributes><Attribute z:Id="i31"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i32"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i32"/><XYZAttribute z:Ref="i31"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i33" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i34" i:type="Mesh"><Attributes><Attribute z:Id="i35"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i35"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i34"/></URDFElement></ChildElements><ElementName>collision</ElementName><required>false</required><Geometry z:Ref="i33"/><Origin z:Ref="i30"/></URDFElement><URDFElement z:Id="i36" i:type="Joint"><Attributes><Attribute z:Id="i37"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute><Attribute z:Id="i38"><AttributeType>type</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i39" i:type="Origin"><Attributes><Attribute z:Id="i40"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i41"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i41"/><XYZAttribute z:Ref="i40"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i42" i:type="ParentLink"><Attributes><Attribute z:Id="i43"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>parent</ElementName><required>true</required><NameAttribute z:Ref="i43"/></URDFElement><URDFElement z:Id="i44" i:type="ChildLink"><Attributes><Attribute z:Id="i45"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>child</ElementName><required>true</required><NameAttribute z:Ref="i45"/></URDFElement><URDFElement z:Id="i46" i:type="Axis"><Attributes><Attribute z:Id="i47"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>axis</ElementName><required>false</required><XYZAttribute z:Ref="i47"/></URDFElement><URDFElement z:Id="i48" i:type="Limit"><Attributes><Attribute z:Id="i49"><AttributeType>lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i50"><AttributeType>upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i51"><AttributeType>effort</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i52"><AttributeType>velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>limit</ElementName><required>false</required><EffortAttribute z:Ref="i51"/><LowerAttribute z:Ref="i49"/><UpperAttribute z:Ref="i50"/><VelocityAttribute z:Ref="i52"/></URDFElement><URDFElement z:Id="i53" i:type="Calibration"><Attributes><Attribute z:Id="i54"><AttributeType>rising</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i55"><AttributeType>falling</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>calibration</ElementName><required>false</required><FallingAttribute z:Ref="i55"/><RisingAttribute z:Ref="i54"/></URDFElement><URDFElement z:Id="i56" i:type="Dynamics"><Attributes><Attribute z:Id="i57"><AttributeType>damping</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i58"><AttributeType>friction</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>dynamics</ElementName><required>false</required><DampingAttribute z:Ref="i57"/><FrictionAttribute z:Ref="i58"/></URDFElement><URDFElement z:Id="i59" i:type="SafetyController"><Attributes><Attribute z:Id="i60"><AttributeType>soft_upper_limit</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i61"><AttributeType>soft_lower_limit</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i62"><AttributeType>k_position</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i63"><AttributeType>k_velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>safety_controller</ElementName><required>false</required><KPositionAttribute z:Ref="i62"/><KVelocityAttribute z:Ref="i63"/><SoftLowerAttribute z:Ref="i61"/><SoftUpperAttribute z:Ref="i60"/></URDFElement><URDFElement z:Id="i64" i:type="Mimic"><Attributes><Attribute z:Id="i65"><AttributeType>joint</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i66"><AttributeType>multiplier</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i67"><AttributeType>offset</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mimic</ElementName><required>false</required><JointNameAttribute z:Ref="i65"/><MultiplierAttribute z:Ref="i66"/><OffsetAttribute z:Ref="i67"/></URDFElement></ChildElements><ElementName>joint</ElementName><required>false</required><Axis z:Ref="i46"/><AxisName/><Calibration z:Ref="i53"/><Child z:Ref="i44"/><CoordinateSystemName>?????????1</CoordinateSystemName><Dynamics z:Ref="i56"/><Limit z:Ref="i48"/><Mimic z:Ref="i64"/><NameAttribute z:Ref="i37"/><Origin z:Ref="i39"/><Parent z:Ref="i42"/><Safety z:Ref="i59"/><TypeAttribute z:Ref="i38"/></URDFElement></ChildElements><ElementName>link</ElementName><required>true</required><Children><Link z:Id="i68"><Attributes><Attribute z:Id="i69"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">box_Link</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i70" i:type="Inertial"><Attributes/><ChildElements><URDFElement z:Id="i71" i:type="Origin"><Attributes><Attribute z:Id="i72"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i73"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i73"/><XYZAttribute z:Ref="i72"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i74" i:type="Mass"><Attributes><Attribute z:Id="i75"><AttributeType>value</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>mass</ElementName><required>false</required><ValueAttribute z:Ref="i75"/></URDFElement><URDFElement z:Id="i76" i:type="Inertia"><Attributes><Attribute z:Id="i77"><AttributeType>ixx</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i78"><AttributeType>ixy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i79"><AttributeType>ixz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i80"><AttributeType>iyy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i81"><AttributeType>iyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i82"><AttributeType>izz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>inertia</ElementName><required>false</required><IxxAttribute z:Ref="i77"/><IxyAttribute z:Ref="i78"/><IxzAttribute z:Ref="i79"/><IyyAttribute z:Ref="i80"/><IyzAttribute z:Ref="i81"/><IzzAttribute z:Ref="i82"/></URDFElement></ChildElements><ElementName>inertial</ElementName><required>false</required><Inertia z:Ref="i76"/><Mass z:Ref="i74"/><Origin z:Ref="i71"/></URDFElement><URDFElement z:Id="i83" i:type="Visual"><Attributes/><ChildElements><URDFElement z:Id="i84" i:type="Origin"><Attributes><Attribute z:Id="i85"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i86"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i86"/><XYZAttribute z:Ref="i85"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i87" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i88" i:type="Mesh"><Attributes><Attribute z:Id="i89"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i89"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i88"/></URDFElement><URDFElement z:Id="i90" i:type="Material"><Attributes><Attribute z:Id="i91"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i92" i:type="Color"><Attributes><Attribute z:Id="i93"><AttributeType>rgba</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>color</ElementName><required>false</required><RGBAAttribute z:Ref="i93"/></URDFElement><URDFElement z:Id="i94" i:type="Texture"><Attributes><Attribute z:Id="i95"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>texture</ElementName><required>false</required><FilenameAttribute z:Ref="i95"/><wFilename/></URDFElement></ChildElements><ElementName>material</ElementName><required>false</required><Color z:Ref="i92"/><NameAttribute z:Ref="i91"/><Texture z:Ref="i94"/></URDFElement></ChildElements><ElementName>visual</ElementName><required>false</required><Geometry z:Ref="i87"/><Material z:Ref="i90"/><Origin z:Ref="i84"/></URDFElement><URDFElement z:Id="i96" i:type="Collision"><Attributes/><ChildElements><URDFElement z:Id="i97" i:type="Origin"><Attributes><Attribute z:Id="i98"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i99"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i99"/><XYZAttribute z:Ref="i98"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i100" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i101" i:type="Mesh"><Attributes><Attribute z:Id="i102"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i102"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i101"/></URDFElement></ChildElements><ElementName>collision</ElementName><required>false</required><Geometry z:Ref="i100"/><Origin z:Ref="i97"/></URDFElement><URDFElement z:Id="i103" i:type="Joint"><Attributes><Attribute z:Id="i104"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">box_joint</Value></Attribute><Attribute z:Id="i105"><AttributeType>type</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">prismatic</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i106" i:type="Origin"><Attributes><Attribute z:Id="i107"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i108"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i108"/><XYZAttribute z:Ref="i107"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i109" i:type="ParentLink"><Attributes><Attribute z:Id="i110"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>parent</ElementName><required>true</required><NameAttribute z:Ref="i110"/></URDFElement><URDFElement z:Id="i111" i:type="ChildLink"><Attributes><Attribute z:Id="i112"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>child</ElementName><required>true</required><NameAttribute z:Ref="i112"/></URDFElement><URDFElement z:Id="i113" i:type="Axis"><Attributes><Attribute z:Id="i114"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>axis</ElementName><required>false</required><XYZAttribute z:Ref="i114"/></URDFElement><URDFElement z:Id="i115" i:type="Limit"><Attributes><Attribute z:Id="i116"><AttributeType>lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i117"><AttributeType>upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i118"><AttributeType>effort</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i119"><AttributeType>velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>limit</ElementName><required>false</required><EffortAttribute z:Ref="i118"/><LowerAttribute z:Ref="i116"/><UpperAttribute z:Ref="i117"/><VelocityAttribute z:Ref="i119"/></URDFElement><URDFElement z:Id="i120" i:type="Calibration"><Attributes><Attribute z:Id="i121"><AttributeType>rising</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i122"><AttributeType>falling</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>calibration</ElementName><required>false</required><FallingAttribute z:Ref="i122"/><RisingAttribute z:Ref="i121"/></URDFElement><URDFElement z:Id="i123" i:type="Dynamics"><Attributes><Attribute z:Id="i124"><AttributeType>damping</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i125"><AttributeType>friction</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>dynamics</ElementName><required>false</required><DampingAttribute z:Ref="i124"/><FrictionAttribute z:Ref="i125"/></URDFElement><URDFElement z:Id="i126" i:type="SafetyController"><Attributes><Attribute z:Id="i127"><AttributeType>soft_upper_limit</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i128"><AttributeType>soft_lower_limit</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i129"><AttributeType>k_position</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i130"><AttributeType>k_velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>safety_controller</ElementName><required>false</required><KPositionAttribute z:Ref="i129"/><KVelocityAttribute z:Ref="i130"/><SoftLowerAttribute z:Ref="i128"/><SoftUpperAttribute z:Ref="i127"/></URDFElement><URDFElement z:Id="i131" i:type="Mimic"><Attributes><Attribute z:Id="i132"><AttributeType>joint</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i133"><AttributeType>multiplier</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i134"><AttributeType>offset</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mimic</ElementName><required>false</required><JointNameAttribute z:Ref="i132"/><MultiplierAttribute z:Ref="i133"/><OffsetAttribute z:Ref="i134"/></URDFElement></ChildElements><ElementName>joint</ElementName><required>false</required><Axis z:Ref="i113"/><AxisName>?????????4 &lt;D-D005-003003-C-1&gt;</AxisName><Calibration z:Ref="i120"/><Child z:Ref="i111"/><CoordinateSystemName>?????????2</CoordinateSystemName><Dynamics z:Ref="i123"/><Limit z:Ref="i115"/><Mimic z:Ref="i131"/><NameAttribute z:Ref="i104"/><Origin z:Ref="i106"/><Parent z:Ref="i109"/><Safety z:Ref="i126"/><TypeAttribute z:Ref="i105"/></URDFElement></ChildElements><ElementName>link</ElementName><required>true</required><Children/><Collision z:Ref="i96"/><Inertial z:Ref="i70"/><Joint z:Ref="i103"/><NameAttribute z:Ref="i69"/><Parent z:Ref="i1"/><STLQualityFine>false</STLQualityFine><SWComponentPIDs xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADAAMgAtAEEALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAiAAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8Sa1MfZilZv34tABGGx4M0WS0AMgBAAEEAdQB0AG8AawBpAHQABAAAABAAAAABAAAAAQAAAPwAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADAAMwAtAEEALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAiQAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADEAMwAtAEEALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAlQAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADEAMwAtAEEALQAyAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAlgAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8WUgBUAEsALQBOAEUAVwBUAE8ATgAtADIALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAYAAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZRAAtAEQAMAAwADUALQAwADAAMwAwADAAMwAtAEMALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAApQAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADAANAAtAEEALQAyAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAYwAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADEANAAtAEEALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAbQAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADAAMQAtAEEALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAGwAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZRAAtAEQAMAAwADUALQAwADAAMwAwADAANgAtAEMALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAqgAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEMAMgA1ADQALQAyADQAMAAwADAAMQAtAEEALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAA2AAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8PMQA0APhbT1xVXi0AMQBAAEEAdQB0AG8AawBpAHQABAAAABAAAAABAAAAAQAAAO0AAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8VUgBTAC0ATABJAEQAQQBSAC0AMQA2AC0AMQBAAEEAdQB0AG8AawBpAHQABAAAABAAAAABAAAAAQAAAPQAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8Sa1MfZilZv34tABGGx4M0WS0AMQBAAEEAdQB0AG8AawBpAHQABAAAABAAAAABAAAAAQAAAPcAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8qSQBuAHQAZQBsAFIAZQBhAGwAcwBlAG4AcwBlAF8ARAA0ADMANQAoAGkAKQBfAE0AdQBsAHQAaQBiAG8AZAB5AC0AMQBAAEEAdQB0AG8AawBpAHQABAAAABAAAAABAAAAAQAAAAEBAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADEAMAAtAEEALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAsAAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADAANgAtAEEALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAswAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADAANgAtAEEALQAzAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAA1wAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADEAMgAtAEEALQAyAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAoAAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADAANQAtAEEALQAyAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAOwAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADAANQAtAEEALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAANgAAAA==</a:base64Binary></SWComponentPIDs><SWMainComponentPID i:nil="true"/><Visual z:Ref="i83"/><isFixedFrame>false</isFixedFrame><isIncomplete>false</isIncomplete></Link></Children><Collision z:Ref="i29"/><Inertial z:Ref="i3"/><Joint z:Ref="i36"/><NameAttribute z:Ref="i2"/><Parent i:nil="true"/><STLQualityFine>false</STLQualityFine><SWComponentPIDs xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:base64Binary>yDIAAAUAAAD//v8ZTQAtAEQAMAA0ADgALQAxADgAMAAwADEANQAtAEEALQAxAEAAQQB1AHQAbwBrAGkAdAAEAAAAEAAAAAEAAAABAAAAHAAAAA==</a:base64Binary></SWComponentPIDs><SWMainComponentPID i:nil="true"/><Visual z:Ref="i16"/><isFixedFrame>false</isFixedFrame><isIncomplete>false</isIncomplete></Link>
+2022-11-04 10:17:04,055 INFO  AssemblyExportForm.cs: 309 - Saving URDF package to C:\Users\lin\Desktop\仿真\autokit
+2022-11-04 10:17:04,057 INFO  ExportHelper.cs: 147 - Beginning the export process
+2022-11-04 10:17:04,058 INFO  ExportHelper.cs: 153 - Creating package directories with name autokit and save path C:\Users\lin\Desktop\仿真
+2022-11-04 10:17:06,135 INFO  ExportHelper.cs: 162 - Creating CMakeLists.txt at C:\Users\lin\Desktop\仿真\autokit\CMakeLists.txt
+2022-11-04 10:17:06,135 INFO  ExportHelper.cs: 166 - Creating joint names config at C:\Users\lin\Desktop\仿真\autokit\config\joint_names_autokit.yaml
+2022-11-04 10:17:06,136 INFO  ExportHelper.cs: 170 - Creating package.xml at C:\Users\lin\Desktop\仿真\autokit\package.xml
+2022-11-04 10:17:06,137 INFO  PackageXMLWriter.cs: 21 - Creating package.xml at C:\Users\lin\Desktop\仿真\autokit\package.xml
+2022-11-04 10:17:06,138 INFO  ExportHelper.cs: 177 - Creating RVIZ launch file in C:\Users\lin\Desktop\仿真\autokit\launch\
+2022-11-04 10:17:06,139 INFO  ExportHelper.cs: 182 - Creating Gazebo launch file in C:\Users\lin\Desktop\仿真\autokit\launch\
+2022-11-04 10:17:06,140 INFO  ExportHelper.cs: 187 - Saving existing STL preferences
+2022-11-04 10:17:06,140 INFO  ExportHelper.cs: 450 - Saving users preferences
+2022-11-04 10:17:06,141 INFO  ExportHelper.cs: 190 - Modifying STL preferences
+2022-11-04 10:17:06,141 INFO  ExportHelper.cs: 464 - Setting STL preferences
+2022-11-04 10:17:06,145 INFO  ExportHelper.cs: 196 - Found 0 hidden components 
+2022-11-04 10:17:06,145 INFO  ExportHelper.cs: 197 - Hiding all components
+2022-11-04 10:17:06,363 INFO  ExportHelper.cs: 204 - Beginning individual files export
+2022-11-04 10:17:06,382 INFO  ExportHelper.cs: 270 - Exporting link: base_link
+2022-11-04 10:17:06,383 INFO  ExportHelper.cs: 272 - Link base_link has 1 children
+2022-11-04 10:17:06,383 INFO  ExportHelper.cs: 270 - Exporting link: box_Link
+2022-11-04 10:17:06,384 INFO  ExportHelper.cs: 272 - Link box_Link has 0 children
+2022-11-04 10:17:06,384 INFO  ExportHelper.cs: 317 - box_Link: Exporting STL with coordinate frame 坐标系2
+2022-11-04 10:17:06,385 INFO  ExportHelper.cs: 322 - box_Link: Reference geometry name 
+2022-11-04 10:17:06,624 INFO  ExportHelper.cs: 330 - Saving STL to C:\Users\lin\Desktop\仿真\autokit\meshes\box_Link.STL
+2022-11-04 10:17:09,730 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2022-11-04 10:17:09,731 INFO  ExportHelper.cs: 317 - base_link: Exporting STL with coordinate frame 坐标系1
+2022-11-04 10:17:09,731 INFO  ExportHelper.cs: 322 - base_link: Reference geometry name 
+2022-11-04 10:17:09,774 INFO  ExportHelper.cs: 330 - Saving STL to C:\Users\lin\Desktop\仿真\autokit\meshes\base_link.STL
+2022-11-04 10:17:09,887 INFO  ExportHelper.cs: 405 - Removing SW header in STL file
+2022-11-04 10:17:09,888 INFO  ExportHelper.cs: 145 - Showing all components except previously hidden components
+2022-11-04 10:17:10,115 INFO  ExportHelper.cs: 145 - Resetting STL preferences
+2022-11-04 10:17:10,115 INFO  ExportHelper.cs: 478 - Returning STL preferences to user preferences
+2022-11-04 10:17:10,116 INFO  ExportHelper.cs: 228 - Writing URDF file to C:\Users\lin\Desktop\仿真\autokit\urdf\autokit.urdf
+2022-11-04 10:17:10,164 INFO  CSVImportExport.cs: 32 - Writing CSV file C:\Users\lin\Desktop\仿真\autokit\urdf\autokit.csv
+2022-11-04 10:17:10,177 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2022-11-04 10:17:10,178 ERROR CSVImportExport.cs: 130 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2022-11-04 10:17:10,178 INFO  ExportHelper.cs: 234 - Copying log file
+2022-11-04 10:17:10,180 INFO  ExportHelper.cs: 439 - Copying C:\Users\lin\sw2urdf_logs\sw2urdf.log to C:\Users\lin\Desktop\仿真\autokit\export.log
