@@ -1,0 +1,32 @@
+# PID gains for the steer_bot_hardware_gazebo plugin.
+# Configuration for the ros_controllers joint_state_controller.
+joint_state_publisher:
+    type: "joint_state_controller/JointStateController"
+    publish_rate: 50
+
+# Configuration for the steer_bot_hardware_gazebo plugin.
+hunter2_hardware_gazebo:
+    rear_wheel  : 'rear_wheel_joint'
+    front_steer : 'front_wheel_joint'
+
+    virtual_rear_wheels: ['wheel_joint1', 'wheel_joint2']
+    virtual_front_wheels: ['wheel_joint3', 'wheel_joint4']
+    virtual_front_steers: ['wheel_joint4_steering', 'wheel_joint4_steering']
+
+    enable_ackermann_link : true
+    wheel_separation_h : 0.4
+    wheel_separation_w : 0.4
+
+
+gains:
+    wheel_joint1:
+        p: 100000.0
+        d: 10.0
+        i: 0.50
+        i_clamp: 3.0
+    wheel_joint2:
+        p: 100000.0
+        d: 10.0
+        i: 0.50
+        i_clamp: 3.0
+
