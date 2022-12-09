@@ -64,7 +64,7 @@
             <rightRearJoint>rear_right_wheel</rightRearJoint>
             <wheelSeparation>0.172</wheelSeparation>
             <wheelDiameter>0.09</wheelDiameter>
-            <robotBaseFrame>base_footprint</robotBaseFrame>
+            <robotBaseFrame>base_link</robotBaseFrame>
             <commandTopic>cmd_vel</commandTopic>
             <torque>50</torque>
             <broadcastTF>true</broadcastTF>

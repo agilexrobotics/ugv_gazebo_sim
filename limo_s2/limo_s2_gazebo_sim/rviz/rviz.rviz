@@ -62,6 +62,26 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        arm_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         base_footprint:
           Alpha: 1
           Show Axes: false
@@ -204,7 +224,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_footprint
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:
@@ -234,6 +254,7 @@ Visualization Manager:
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
+      Field of View: 0.7853981852531433
       Focal Point:
         X: 0
         Y: 0
@@ -245,7 +266,6 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 1.0903979539871216
       Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
       Yaw: 3.0635826587677
     Saved: ~
 Window Geometry:
@@ -267,4 +287,4 @@ Window Geometry:
     collapsed: false
   Width: 1267
   X: 60
-  Y: 30
+  Y: 27

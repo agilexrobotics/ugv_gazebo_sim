@@ -7,3 +7,5 @@ limo_state_controller:
     front_right_wheel: {p: 1.0, i: 0, d: 0.01} 
     rear_left_wheel: {p: 1.0, i: 0, d: 0.01} 
     rear_right_wheel: {p: 1.0, i: 0, d: 0.01} 
+    # arm_joint1: {p: 0.0, i: 0.0, d: 0.01}
+    # arm_joint2: {p: 0.0, i: 0.0, d: 0.01}

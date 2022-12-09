@@ -12,7 +12,7 @@
         <arg name="debug" value="false"/>
     </include>
 
-    <param name="robot_description" command="$(find xacro)/xacro '$(find limo_s2_description)/urdf/limo_s2.xacro'
+    <param name="robot_description" command="$(find xacro)/xacro '$(find limo_s2_description)/urdf/limo_s2_with_arm.xacro'
         robot_namespace:=$(arg robot_namespace)" />
 
     <!-- initial pose -->
@@ -31,12 +31,15 @@
 
     <!-- Load joint controller configurations from YAML file to parameter server -->
     <rosparam file="$(find limo_s2_gazebo_sim)/config/limo_s2_controller.yaml" command="load"/>
+    <rosparam file="$(find limo_s2_gazebo_sim)/config/limo_s2_arm_controller.yaml" command="load"/>
+
 
     <!-- load the controllers -->
     <node name="controller_spawner" pkg="controller_manager" type="spawner"
-          respawn="false" output="screen" args="limo_state_controller "/>
+          respawn="false" output="screen" args="limo_state_controller"/>
 
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
         
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find limo_s2_gazebo_sim)/rviz/rviz.rviz" />
 </launch>

@@ -32,7 +32,7 @@
         <visual>
             <origin xyz="0.095 0 -0.035" rpy="0 0 1.57" />
             <geometry>
-                <mesh filename="package://limo_s2_description/meshes/dae/base_link.dae" scale="1 1 1"/>
+                <mesh filename="package://limo_s2_description/meshes/dae/base_link_2.dae" scale="0.001 0.001 0.001"/>
             </geometry>
         </visual>
         <collision>

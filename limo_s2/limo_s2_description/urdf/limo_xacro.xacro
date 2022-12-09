@@ -10,7 +10,7 @@
             <visual>
                 <origin xyz="0.01 -0.064 0.064" rpy="0 0 -1.57" />
                 <geometry>
-                    <mesh filename="package://limo_s2_description/meshes/dae/LIMO_S2_mailun_1.dae" />
+                    <mesh filename="package://limo_s2_description/meshes/dae/mailun_1.dae" />
                 </geometry>
             </visual>
             <collision>
@@ -39,7 +39,7 @@
             <visual>
                 <origin xyz="0 0 0" rpy="0 0 0" />
                 <geometry>
-                    <mesh filename="package://limo_s2_description/meshes/dae/LIMO_S2_mailun_2.dae" />
+                    <mesh filename="package://limo_s2_description/meshes/dae/mailun_2.dae" />
                 </geometry>
             </visual>
             <collision>
@@ -76,7 +76,7 @@
                 <geometry>
                     <mesh filename="package://limo_s2_description/meshes/laser_Link.STL" />
                 </geometry>
-                <material name='laser_material'>
+                <material name=''>
                     <ambient>0.1 0.1 0.1 1</ambient>
                     <diffuse>0.1 0.1 0.2 1</diffuse>
                     <specular>0 0 0 0</specular>
@@ -115,9 +115,9 @@
             <visual name='depth_camera_visual'>
                 <origin xyz="0.21 0 -0.13" rpy="0 0 1.57 "/>
                 <geometry>
-                    <mesh filename="package://limo_s2_description/meshes/dae/camera_Link.dae" />
+                    <mesh filename="package://limo_s2_description/meshes/dae/camera.dae" />
                 </geometry>
-                <material name='depth_camera_material'>
+                <material name=''>
                     <ambient>0.1 0.1 0.1 1</ambient>
                     <diffuse>0.1 0.1 0.2 1</diffuse>
                     <specular>0 0 0 0</specular>
@@ -167,7 +167,7 @@
                 <geometry>
                     <box size="0.001 0.001 0.001"/>
                 </geometry>
-                <material name='imu_material'>
+                <material name=''>
                     <ambient>0.1 0.1 0.1 1</ambient>
                     <diffuse>0.1 0.1 0.2 1</diffuse>
                     <specular>0 0 0 0</specular>
