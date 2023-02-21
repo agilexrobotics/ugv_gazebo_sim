@@ -110,10 +110,10 @@
         value="7.7007" />
       <inertia
         ixx="0.063724"
-        ixy="-3.8745E-08"
-        ixz="2.2753E-07"
+        ixy="0"
+        ixz="0"
         iyy="0.063724"
-        iyz="-4.88E-08"
+        iyz="0"
         izz="0.11072" />
     </inertial>
     <visual>
@@ -152,7 +152,7 @@
       link="front_left_wheel_link" />
     <axis
       xyz="0 0 -1" />
-      <dynamics damping="0.0" friction="2"/>
+      <dynamics damping="0.0" friction="15"/>
   </joint>
   <link
     name="front_steer_right_link">
@@ -220,10 +220,10 @@
         value="7.5613" />
       <inertia
         ixx="0.063626"
-        ixy="-6.4092E-08"
-        ixz="-2.0164E-08"
+        ixy="0"
+        ixz="0"
         iyy="0.063626"
-        iyz="6.4721E-08"
+        iyz="0"
         izz="0.11054" />
     </inertial>
     <visual>
@@ -262,7 +262,7 @@
       link="front_right_wheel_link" />
     <axis
       xyz="0 0 -1" />
-      <dynamics damping="0.0" friction="2"/>
+      <dynamics damping="0.0" friction="15"/>
   </joint>
   <link
     name="left_rear_link">
@@ -274,10 +274,10 @@
         value="7.6692" />
       <inertia
         ixx="0.063699"
-        ixy="-2.542E-07"
-        ixz="2.638E-08"
+        ixy="0"
+        ixz="0"
         iyy="0.063699"
-        iyz="-5.9934E-08"
+        iyz="0"
         izz="0.11067" />
     </inertial>
     <visual>
@@ -316,7 +316,7 @@
       link="left_rear_link" />
     <axis
       xyz="0 0 -1" />
-     <dynamics damping="0.0" friction="2"/>
+     <dynamics damping="0.0" friction="15"/>
   </joint>
   <link
     name="right_rear_link">
@@ -328,10 +328,10 @@
         value="7.7133" />
       <inertia
         ixx="0.06373"
-        ixy="2.5408E-07"
-        ixz="2.6379E-08"
+        ixy="0"
+        ixz="0"
         iyy="0.06373"
-        iyz="5.9941E-08"
+        iyz="0"
         izz="0.11073" />
     </inertial>
     <visual>
@@ -370,7 +370,7 @@
       link="right_rear_link" />
     <axis
       xyz="0 0 -1" />
-     <dynamics damping="0.0" friction="2"/>
+     <dynamics damping="0.0" friction="15"/>
   </joint>
   <link
     name="front_steer_link">
@@ -478,7 +478,7 @@
       link="rear_wheel_link" />
     <axis
       xyz="0 0 1" />
-    <dynamics damping="0.0" friction="2"/>
+    <dynamics damping="0.0" friction="15"/>
   </joint>
   
   <gazebo reference="front_left_wheel_link"> 
