@@ -152,7 +152,7 @@
       link="front_left_wheel_link" />
     <axis
       xyz="0 0 -1" />
-      <dynamics damping="0.0" friction="3"/>
+      <dynamics damping="0.0" friction="2"/>
   </joint>
   <link
     name="front_steer_right_link">
@@ -262,7 +262,7 @@
       link="front_right_wheel_link" />
     <axis
       xyz="0 0 -1" />
-      <dynamics damping="0.0" friction="3"/>
+      <dynamics damping="0.0" friction="2"/>
   </joint>
   <link
     name="left_rear_link">
@@ -316,7 +316,7 @@
       link="left_rear_link" />
     <axis
       xyz="0 0 -1" />
-     <dynamics damping="0.0" friction="3"/>
+     <dynamics damping="0.0" friction="2"/>
   </joint>
   <link
     name="right_rear_link">
@@ -370,7 +370,7 @@
       link="right_rear_link" />
     <axis
       xyz="0 0 -1" />
-     <dynamics damping="0.0" friction="3"/>
+     <dynamics damping="0.0" friction="2"/>
   </joint>
   <link
     name="front_steer_link">
@@ -478,12 +478,12 @@
       link="rear_wheel_link" />
     <axis
       xyz="0 0 1" />
-    <dynamics damping="0.0" friction="3"/>
+    <dynamics damping="0.0" friction="2"/>
   </joint>
   
   <gazebo reference="front_left_wheel_link"> 
-    <mu1>0.9</mu1>
-    <mu2>0.9</mu2>
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
     <kp>500000.0</kp>
     <kd>10.0</kd>
     <minDepth>0.001</minDepth>
@@ -492,8 +492,8 @@
       <material>Gazebo/Grey </material>
       </gazebo>
   <gazebo reference="front_right_wheel_link"> 
-      <mu1>0.9</mu1>
-    <mu2>0.9</mu2>
+      <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
     <kp>500000.0</kp>
     <kd>10.0</kd>
     <minDepth>0.001</minDepth>
@@ -502,8 +502,8 @@
       <material>Gazebo/Grey </material>
       </gazebo>
   <gazebo reference="right_rear_link"> 
-      <mu1>0.9</mu1>
-    <mu2>0.9</mu2>
+      <mu1>0.8</mu1>
+    <mu2>10</mu2>
     <kp>500000.0</kp>
     <kd>10.0</kd>
     <minDepth>0.001</minDepth>
@@ -512,8 +512,8 @@
       <material>Gazebo/Grey </material>
       </gazebo>
   <gazebo reference="left_rear_link"> 
-      <mu1>0.9</mu1>
-    <mu2>0.9</mu2>
+      <mu1>0.8</mu1>
+    <mu2>10</mu2>
     <kp>500000.0</kp>
     <kd>10.0</kd>
     <minDepth>0.001</minDepth>
