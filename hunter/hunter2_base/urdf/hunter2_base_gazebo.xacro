@@ -54,10 +54,10 @@
         value="7.8526" />
       <inertia
         ixx="0.063827"
-        ixy="1.5154E-07"
-        ixz="3.1921E-07"
+        ixy="0"
+        ixz="0"
         iyy="0.063827"
-        iyz="2.9854E-08"
+        iyz="0"
         izz="0.11091" />
     </inertial>
     <visual>
@@ -164,10 +164,10 @@
         value="7.696" />
       <inertia
         ixx="0.063704"
-        ixy="-6.3892E-08"
-        ixz="-2.0159E-08"
+        ixy="0"
+        ixz="0"
         iyy="0.063704"
-        iyz="6.4721E-08"
+        iyz="0"
         izz="0.11068" />
     </inertial>
     <visual>
