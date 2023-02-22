@@ -30,41 +30,41 @@ Reference:
     </gazebo>
 
     <!-- kp spring constant, kd damping constant -->
-    <gazebo reference="front_left_wheel">
-        <mu1>10</mu1>
-        <mu2>10</mu2>
-        <kp>10000000.0</kp>
-        <kd>1.0</kd>
-        <minDepth>0.01</minDepth>
+    <gazebo reference="front_left_wheel_link">
+        <mu1>0.9</mu1>
+        <mu2>0.7</mu2>
+        <kp>1000000000.0</kp>
+        <kd>0.0</kd>
+        <minDepth>0.001</minDepth>
         <fdir1>1 0 0</fdir1>
-        <maxContacts value="64"/>
+
     </gazebo>
-    <gazebo reference="front_right_wheel">
-        <mu1>10</mu1>
-        <mu2>10</mu2>
-        <kp>10000000.0</kp>
-        <kd>1.0</kd>
-        <minDepth>0.01</minDepth>
+    <gazebo reference="front_right_wheel_link">
+        <mu1>0.9</mu1>
+        <mu2>0.7</mu2>
+        <kp>1000000000.0</kp>
+        <kd>0.0</kd>
+        <minDepth>0.001</minDepth>
         <fdir1>1 0 0</fdir1>
-        <maxContacts value="64"/>
+
     </gazebo>
-    <gazebo reference="rear_left_wheel">
-        <mu1>10</mu1>
-        <mu2>10</mu2>
-        <kp>10000000.0</kp>
-        <kd>1.0</kd>
-        <minDepth>0.01</minDepth>
+    <gazebo reference="rear_left_wheel_link">
+        <mu1>0.9</mu1>
+        <mu2>0.7</mu2>
+        <kp>1000000000.0</kp>
+        <kd>0.0</kd>
+        <minDepth>0.001</minDepth>
         <fdir1>1 0 0</fdir1>
-        <maxContacts value="64"/>
+
     </gazebo>
-    <gazebo reference="rear_right_wheel">
-        <mu1>10</mu1>
-        <mu2>10</mu2>
-        <kp>10000000.0</kp>
-        <kd>1.0</kd>
-        <minDepth>0.01</minDepth>
+    <gazebo reference="rear_right_wheel_link">
+        <mu1>0.9</mu1>
+        <mu2>0.7</mu2>
+        <kp>1000000000.0</kp>
+        <kd>0.0</kd>
+        <minDepth>0.001</minDepth>
         <fdir1>1 0 0</fdir1>
-        <maxContacts value="64"/>
+        <!--maxContacts value="64"/-->
     </gazebo>
     
     <!-- <gazebo>

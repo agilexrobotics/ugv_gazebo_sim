@@ -13,6 +13,10 @@
         <arg name="debug" value="false"/>
     </include>
     
+      <!--include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="gui" default="true"/>
+  </include-->
+    
     <include file="$(find scout_gazebo_sim)/launch/spawn_scout_v2.launch"></include>
         
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find scout_description)/rviz/navigation.rviz" />
