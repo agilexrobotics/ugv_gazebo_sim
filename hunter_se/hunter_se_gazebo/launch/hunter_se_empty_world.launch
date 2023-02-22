@@ -13,7 +13,7 @@
   <param name="robot_description" command="$(find xacro)/xacro '$(find hunter_se_description)/urdf/hunter_se_description.urdf'" />
   <!-- <param name="robot_description" command="cat $(find hunter_se_base)/urdf/hunter_se_base.urdf"/> -->
   <!-- push robot_description to factory and spawn robot in gazebo -->
-  <node name="hunter_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model hunter_se -z 0.05"
+  <node name="hunter_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model hunter_se -z 1.5"
     respawn="false" />
 
   </launch>

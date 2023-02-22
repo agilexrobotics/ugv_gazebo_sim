@@ -11,7 +11,7 @@
         xyz="0.0266989327622036 0.000409203500587652 -0.135901124750884"
         rpy="0 0 0" />
       <mass
-        value="1.02945169536679" />
+        value="21.02945169536679" />
       <inertia
         ixx="0.0332370959804736"
         ixy="-1.013150489971E-06"
@@ -51,13 +51,13 @@
         xyz="-0.012614 1.8116E-05 0.0023132"
         rpy="0 0 0" />
       <mass
-        value="0.8526" />
+        value="7.8526" />
       <inertia
         ixx="0.063827"
-        ixy="1.5154E-07"
-        ixz="3.1921E-07"
+        ixy="0"
+        ixz="0"
         iyy="0.063827"
-        iyz="2.9854E-08"
+        iyz="0"
         izz="0.11091" />
     </inertial>
     <visual>
@@ -107,13 +107,13 @@
         xyz="-6.5774E-06 2.0242E-05 -0.0096386"
         rpy="0 0 0" />
       <mass
-        value="0.7007" />
+        value="7.7007" />
       <inertia
         ixx="0.063724"
-        ixy="-3.8745E-08"
-        ixz="2.2753E-07"
+        ixy="0"
+        ixz="0"
         iyy="0.063724"
-        iyz="-4.88E-08"
+        iyz="0"
         izz="0.11072" />
     </inertial>
     <visual>
@@ -152,6 +152,7 @@
       link="front_left_wheel_link" />
     <axis
       xyz="0 0 -1" />
+      <dynamics damping="0.0" friction="15"/>
   </joint>
   <link
     name="front_steer_right_link">
@@ -160,13 +161,13 @@
         xyz="-8.9374E-08 1.0997E-07 0.0095958"
         rpy="0 0 0" />
       <mass
-        value="0.696" />
+        value="7.696" />
       <inertia
         ixx="0.063704"
-        ixy="-6.3892E-08"
-        ixz="-2.0159E-08"
+        ixy="0"
+        ixz="0"
         iyy="0.063704"
-        iyz="6.4721E-08"
+        iyz="0"
         izz="0.11068" />
     </inertial>
     <visual>
@@ -216,13 +217,13 @@
         xyz="-9.1148E-08 1.1284E-07 0.0095049"
         rpy="0 0 0" />
       <mass
-        value="0.5613" />
+        value="7.5613" />
       <inertia
         ixx="0.063626"
-        ixy="-6.4092E-08"
-        ixz="-2.0164E-08"
+        ixy="0"
+        ixz="0"
         iyy="0.063626"
-        iyz="6.4721E-08"
+        iyz="0"
         izz="0.11054" />
     </inertial>
     <visual>
@@ -261,6 +262,7 @@
       link="front_right_wheel_link" />
     <axis
       xyz="0 0 -1" />
+      <dynamics damping="0.0" friction="15"/>
   </joint>
   <link
     name="left_rear_link">
@@ -269,13 +271,13 @@
         xyz="-8.826E-05 6.4342E-05 -0.0096491"
         rpy="0 0 0" />
       <mass
-        value="0.6692" />
+        value="7.6692" />
       <inertia
         ixx="0.063699"
-        ixy="-2.542E-07"
-        ixz="2.638E-08"
+        ixy="0"
+        ixz="0"
         iyy="0.063699"
-        iyz="-5.9934E-08"
+        iyz="0"
         izz="0.11067" />
     </inertial>
     <visual>
@@ -314,11 +316,7 @@
       link="left_rear_link" />
     <axis
       xyz="0 0 -1" />
-    <limit
-      lower="-3.14"
-      upper="3.14"
-      effort="0"
-      velocity="0" />
+     <dynamics damping="0.0" friction="15"/>
   </joint>
   <link
     name="right_rear_link">
@@ -327,13 +325,13 @@
         xyz="8.6344E-05 7.4488E-05 0.0097824"
         rpy="0 0 0" />
       <mass
-        value="0.7133" />
+        value="7.7133" />
       <inertia
         ixx="0.06373"
-        ixy="2.5408E-07"
-        ixz="2.6379E-08"
+        ixy="0"
+        ixz="0"
         iyy="0.06373"
-        iyz="5.9941E-08"
+        iyz="0"
         izz="0.11073" />
     </inertial>
     <visual>
@@ -372,11 +370,7 @@
       link="right_rear_link" />
     <axis
       xyz="0 0 -1" />
-    <limit
-      lower="-3.14"
-      upper="3.14"
-      effort="0"
-      velocity="0" />
+     <dynamics damping="0.0" friction="15"/>
   </joint>
   <link
     name="front_steer_link">
@@ -484,18 +478,47 @@
       link="rear_wheel_link" />
     <axis
       xyz="0 0 1" />
+    <dynamics damping="0.0" friction="15"/>
   </joint>
   
   <gazebo reference="front_left_wheel_link"> 
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
       <material>Gazebo/Grey </material>
       </gazebo>
   <gazebo reference="front_right_wheel_link"> 
+      <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
       <material>Gazebo/Grey </material>
       </gazebo>
   <gazebo reference="right_rear_link"> 
+      <mu1>0.8</mu1>
+    <mu2>10</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
       <material>Gazebo/Grey </material>
       </gazebo>
   <gazebo reference="left_rear_link"> 
+      <mu1>0.8</mu1>
+    <mu2>10</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
       <material>Gazebo/Grey </material>
       </gazebo>
 

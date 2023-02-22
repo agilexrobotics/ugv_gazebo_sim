@@ -11,8 +11,8 @@ ackermann_steering_controller:
     front_steer: 'front_steer_joint'
 
     # Geometry
-    wheel_separation_h: 0.55
-    wheel_radius: 0.257
+    wheel_separation_h: 0.608
+    wheel_radius: 0.137
 
     # Odometry calibration and tuning
     wheel_separation_h_multiplier: 1.0  # default: 1.0

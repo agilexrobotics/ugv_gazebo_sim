@@ -11,7 +11,7 @@
         args="joint_state_publisher ackermann_steering_controller"  output="screen" respawn="false" />
    
     <!-- Launch the robot state publisher -->
-    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" >
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
             <param name="publish_frequency" value="50.0"/>
         </node>
 

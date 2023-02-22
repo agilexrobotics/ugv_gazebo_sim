@@ -11,7 +11,7 @@
         xyz="0.0374140021041951 -0.000373005187591258 -0.0771282894414029"
         rpy="0 0 0" />
       <mass
-        value="10" />
+        value="24.73" />
       <inertia
         ixx="0.123215829336501"
         ixy="-2.51201031615063E-06"
@@ -51,7 +51,7 @@
         xyz="-0.0002776492198312 0.0163539773588368 4.97346169803237E-09"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="3.149" />
       <inertia
         ixx="0.0222"
         ixy="0.0"
@@ -107,7 +107,7 @@
         xyz="-3.5837499634539E-10 4.97346158701006E-09 -0.016356334080185"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="3.149" />
       <inertia
         ixx="0.0222"
         ixy="0.0"
@@ -152,6 +152,7 @@
       link="fr_left_link" />
     <axis
       xyz="0 0 -1" />
+     <dynamics damping="0.0" friction="15"/>      
   </joint>
   <link
     name="fr_steer_right_link">
@@ -160,7 +161,7 @@
         xyz="0.000274981985673328 -0.0163540222836661 -3.24802407192237E-11"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="3.149" />
       <inertia
         ixx="0.0222"
         ixy="0.0"
@@ -216,7 +217,7 @@
         xyz="0.00027498198567355 3.24801296969213E-11 -0.0163540222836661"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="3.149" />
       <inertia
         ixx="0.0222"
         ixy="0.0"
@@ -261,6 +262,7 @@
       link="fr_right_link" />
     <axis
       xyz="0 0 1" />
+    <dynamics damping="0.0" friction="15"/>
   </joint>
 
   <link
@@ -270,7 +272,7 @@
         xyz="1.245E-09 1.7252E-06 -0.010284"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="3.149" />
       <inertia
         ixx="0.0222"
         ixy="0.0"
@@ -304,7 +306,7 @@
     </collision>
   </link>
   <joint
-    name="re_left_jiont"
+    name="re_left_joint"
     type="continuous">
     <origin
       xyz="-0.2078 0.252 -0.158"
@@ -315,6 +317,7 @@
       link="re_left_link" />
     <axis
       xyz="0 0 -1" />
+    <dynamics damping="0.0" friction="15"/>
   </joint>
   <link
     name="re_right_link">
@@ -323,7 +326,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="3.149" />
       <inertia
         ixx="0.0222"
         ixy="0.0"
@@ -357,7 +360,7 @@
     </collision>
   </link>
   <joint
-    name="re_right_jiont"
+    name="re_right_joint"
     type="continuous">
     <origin
       xyz="-0.2078 -0.252 -0.158"
@@ -368,6 +371,7 @@
       link="re_right_link" />
     <axis
       xyz="0 0 1" />
+    <dynamics damping="0.0" friction="15"/>
   </joint>
 
   <link
@@ -478,6 +482,48 @@
       xyz="0 0 1" />
   </joint>
   
+  
+  
+    <gazebo reference="fr_left_link"> 
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
+      <material>Gazebo/Grey </material>
+      </gazebo>
+  <gazebo reference="fr_right_link"> 
+      <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
+      <material>Gazebo/Grey </material>
+      </gazebo>
+  <gazebo reference="re_left_link"> 
+      <mu1>0.8</mu1>
+    <mu2>10</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
+      <material>Gazebo/Grey </material>
+      </gazebo>
+  <gazebo reference="re_right_link"> 
+      <mu1>0.8</mu1>
+    <mu2>10</mu2>
+    <kp>500000.0</kp>
+    <kd>10.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
+      <material>Gazebo/Grey </material>
+      </gazebo>
 
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
