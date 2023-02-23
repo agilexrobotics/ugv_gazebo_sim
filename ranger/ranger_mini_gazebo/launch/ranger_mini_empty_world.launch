@@ -21,12 +21,12 @@
   </include>
 
   <!-- launch joynode -->
-    <remap from='joy' to='joy'/>
+    <!--remap from='joy' to='joy'/>
     <node pkg="joy" type="joy_node" name="joy_node0">
       <param name="dev" value="$(arg joy_dev0)" />
       <param name="deadzone" value="0.3" />
       <param name="autorepeat_rate" value="20" />
-    </node> 
+    </node-->
 
   <!-- launch commander node -->
   <include file="$(find ranger_mini_control)/launch/commander.launch"/>
@@ -36,7 +36,7 @@
 
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-  		args="-urdf -model ranger_mini -param robot_description"/>
+  		args="-urdf -model ranger_mini -param robot_description -z 0.5"/>
 
   <!-- ros_control motoman launch file -->
   <include file="$(find ranger_mini_control)/launch/robot_control.launch"/>

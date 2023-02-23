@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot name="ranger_mini" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find ranger_mini)/urdf/ranger_mini.gazebo.xacro"/>
+
   <link
     name="base_link">
     <inertial>
@@ -97,6 +97,7 @@
     <axis
       xyz="0 0 1" />
     <limit effort="5" velocity="6.28"  lower="-2.1" upper="2.1" />
+    <dynamics damping="0.0" friction="5"/>
   </joint>
   <link
     name="ffl_wheel_link">
@@ -151,6 +152,7 @@
     <axis
       xyz="1 0 0" />
     <limit effort="1.5" velocity="20"/>
+    <dynamics damping="0.0" friction="2"/>
   </joint>
   <link
     name="front_right_steering_link">
@@ -205,6 +207,7 @@
     <axis
       xyz="0 0 1" />
     <limit effort="5" velocity="6.28"  lower="-2.1" upper="2.1" />
+       <dynamics damping="0.0" friction="5"/>
   </joint>
   <link
     name="ffr_wheel_link">
@@ -259,6 +262,7 @@
     <axis
       xyz="1 0 0" />
     <limit effort="1.5" velocity="20"/>
+        <dynamics damping="0.0" friction="2"/>
   </joint>
   <link
     name="rear_left_steering_link">
@@ -313,6 +317,7 @@
     <axis
       xyz="0 0 1" />
     <limit effort="5" velocity="6.28"  lower="-2.1" upper="2.1" />
+        <dynamics damping="0.0" friction="5"/>
   </joint>
   <link
     name="rfl_wheel_link">
@@ -367,6 +372,7 @@
     <axis
       xyz="1 0 0" />
     <limit effort="1.5" velocity="20"/>
+        <dynamics damping="0.0" friction="2"/>
   </joint>
   <link
     name="rear_right_steering_link">
@@ -421,6 +427,7 @@
     <axis
       xyz="0 0 1" />
     <limit effort="5" velocity="6.28"  lower="-2.1" upper="2.1" />
+        <dynamics damping="0.0" friction="5"/>
   </joint>
   <link
     name="rfr_wheel_link">
@@ -475,8 +482,11 @@
     <axis
       xyz="1 0 0" />
       <limit effort="1.5" velocity="20"/>
+          <dynamics damping="0.0" friction="2"/>
   </joint>
 
+
+  <xacro:include filename="$(find ranger_mini)/urdf/ranger_mini.gazebo.xacro"/>
 
 	<transmission name="front_left_steering_trans">
       <type>transmission_interface/SimpleTransmission</type>

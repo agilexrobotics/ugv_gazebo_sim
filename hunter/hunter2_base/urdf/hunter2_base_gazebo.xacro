@@ -484,8 +484,8 @@
   <gazebo reference="front_left_wheel_link"> 
     <mu1>0.8</mu1>
     <mu2>0.8</mu2>
-    <kp>500000.0</kp>
-    <kd>10.0</kd>
+    <kp>10000000.0</kp>
+    <kd>1.0</kd>
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
@@ -494,8 +494,8 @@
   <gazebo reference="front_right_wheel_link"> 
       <mu1>0.8</mu1>
     <mu2>0.8</mu2>
-    <kp>500000.0</kp>
-    <kd>10.0</kd>
+    <kp>10000000.0</kp>
+    <kd>1.0</kd>
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
@@ -504,8 +504,8 @@
   <gazebo reference="right_rear_link"> 
       <mu1>0.8</mu1>
     <mu2>10</mu2>
-    <kp>500000.0</kp>
-    <kd>10.0</kd>
+    <kp>10000000.0</kp>
+    <kd>1.0</kd>
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
@@ -514,8 +514,8 @@
   <gazebo reference="left_rear_link"> 
       <mu1>0.8</mu1>
     <mu2>10</mu2>
-    <kp>500000.0</kp>
-    <kd>10.0</kd>
+    <kp>10000000.0</kp>
+    <kd>1.0</kd>
     <minDepth>0.001</minDepth>
     <maxVel>0.1</maxVel>
     <fdir1>1 0 0</fdir1>
