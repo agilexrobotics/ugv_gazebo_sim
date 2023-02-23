@@ -85,7 +85,7 @@
     </collision>
   </link>
   <joint
-    name="fron_left_steering_joint"
+    name="front_left_steering_joint"
     type="continuous">
     <origin
       xyz="0.26366 0.18001 0.0557"
@@ -204,7 +204,7 @@
       xyz="0 0 1" />
   </joint>
   <link
-    name="ffr_wheel_ink">
+    name="ffr_wheel_link">
     <inertial>
       <origin
         xyz="0.0016472 -1.6563E-05 2.7857E-05"
@@ -225,7 +225,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/ffr_wheel_ink.STL" />
+          filename="package://ranger_mini/meshes/ffr_wheel_link.STL" />
       </geometry>
       <material
         name="">
@@ -239,7 +239,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/ffr_wheel_ink.STL" />
+          filename="package://ranger_mini/meshes/ffr_wheel_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -252,7 +252,7 @@
     <parent
       link="front_right_steering_link" />
     <child
-      link="ffr_wheel_ink" />
+      link="ffr_wheel_link" />
     <axis
       xyz="1 0 0" />
   </joint>
@@ -360,7 +360,7 @@
     <child
       link="rfl_wheel_link" />
     <axis
-      xyz="-1 0 0" />
+      xyz="1 0 0" />
   </joint>
   <link
     name="rear_right_steering_link">
