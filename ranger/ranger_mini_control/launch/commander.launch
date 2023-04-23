@@ -1,6 +1,0 @@
-<launch>
-  <node pkg="commander" name="commander_node" type="pub_command.py" output="screen"/>
-  <!-- <node pkg="teleop_twist_keyboard" name="teleop" type="teleop_twist_keyboard.py" output="screen" >
-    <remap from="/cmd_vel" to="/four_wheel_steering_controller/cmd_vel"/>
-    </node> -->
-</launch>
