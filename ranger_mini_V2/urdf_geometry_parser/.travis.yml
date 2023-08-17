@@ -1,0 +1,15 @@
+language: generic
+services:
+  - docker
+
+env:
+  matrix:
+    - ROS_DISTRO=kinetic ROS_REPO=ros
+    - ROS_DISTRO=kinetic ROS_REPO=ros-testing
+    - ROS_DISTRO=melodic ROS_REPO=ros
+    - ROS_DISTRO=melodic ROS_REPO=ros-testing
+
+install:
+  - git clone --depth=1 https://github.com/ros-industrial/industrial_ci.git .industrial_ci
+script:
+  - .industrial_ci/travis.sh

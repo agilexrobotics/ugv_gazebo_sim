@@ -1,0 +1,24 @@
+<launch>
+
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find ranger_mini_control)/config/controller_v2.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node name="controller_spawner" pkg="controller_manager"
+		type="spawner" output="screen" 
+		args="joint_state_controller four_wheel_steering_controller">
+  </node>
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher"
+		type="robot_state_publisher" respawn="false" output="screen">
+  </node>
+
+        <node pkg="rqt_robot_steering" type="rqt_robot_steering" name="rqt_robot_steering" >
+        <param name="default_topic" value="/four_wheel_steering_controller/cmd_vel"/>                        
+        <param name="default_vx_max" value="5.0"/>                        
+        <param name="default_vx_min" value="-5.0"/>                       
+        <param name="default_vw_max" value="3.69"/>                  
+        <param name="default_vw_min" value="-3.69"/>                  
+        </node>
+</launch>

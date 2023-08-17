@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="wheel">
+
+  <!-- Wheel Properties -->
+  <xacro:property name="wheel_length" value="0.1" />
+  <xacro:property name="wheel_radius" value="0.28" />
+  <xacro:property name="mass_wheel" value="5.0" />
+
+  <xacro:macro name="wheel" params="wheel_prefix parent_link left_right *joint_origin">
+    <link name="${wheel_prefix}_wheel_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="${left_right * M_PI/2} 0 0" />
+        <geometry>
+          <cylinder length="${wheel_length}" radius="${wheel_radius}" />
+        </geometry>
+        <material name="black">
+          <color rgba="0 0 0 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="${M_PI/2} 0 0" />
+        <geometry>
+          <cylinder length="${wheel_length}" radius="${wheel_radius}" />
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${wheel_prefix}_wheel" type="continuous">
+      <parent link="${parent_link}" />
+      <child link="${wheel_prefix}_wheel_link" />
+      <xacro:insert_block name="joint_origin" />
+      <axis xyz="0 1 0" />
+    </joint>
+  </xacro:macro>
+</robot>

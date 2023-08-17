@@ -1,0 +1,43 @@
+<launch>
+
+  <!-- these are the arguments you can pass this launch file, for example paused:=true -->
+  <arg name="model" default="$(find ranger_mini_v2_gazebo)/xacro/ranger_mini_gazebo.xacro"/>
+  <!-- <arg name="model" default="$(find fourth_robot_description)/robots/fourth_robot.urdf.xacro"/> -->
+  <arg name="paused" default="false"/>
+  <arg name="use_sim_time" default="true"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="debug" default="false"/>
+  <arg name="joy_dev0" default="/dev/input/js0" />
+
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!-- <arg name="world_name" value="$(find robot_launch)/worlds/stage.world"/> -->
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="use_sim_time" value="$(arg use_sim_time)"/>
+    <arg name="headless" value="$(arg headless)"/>
+  </include>
+
+  <!-- launch joynode  -->
+    <!-- <remap from='joy' to='joy'/>
+    <node pkg="joy" type="joy_node" name="joy_node0">
+      <param name="dev" value="$(arg joy_dev0)" />
+      <param name="deadzone" value="0.3" />
+      <param name="autorepeat_rate" value="20" />
+    </node> -->
+
+  <!-- launch commander node -->
+  <!-- <include file="$(find ranger_mini_control)/launch/commander.launch"/> -->
+
+  <!-- Load the URDF into the ROS Parameter Server -->
+  <param name="robot_description" command="$(find xacro)/xacro '$(arg model)'" />
+
+  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+  <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+  		args="-urdf -model ranger_mini_v2 -param robot_description"/>
+
+  <!-- ros_control motoman launch file -->
+  <include file="$(find ranger_mini_control)/launch/robot_control.launch"/>
+</launch>
