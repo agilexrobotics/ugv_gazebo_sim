@@ -36,3 +36,9 @@ Download and install gazebo you can go to the website :http://gazebosim.org/inst
 2) Go to you use product
 3) Each independent chassis product has its own independent instructions in the corresponding file directory
 
+### Ranger mini v2
+
+``` bash
+cd ranger_mini_V2/ranger_mini_v2/meshes/
+unzip ranger_base.zip
+```
