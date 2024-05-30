@@ -1,9 +1,0 @@
-# Publish all joint states -----------------------------------
-limo_state_controller:
-  type: joint_state_controller/JointStateController
-  publish_rate: 100
-/gazebo_ros_control/pid_gains:
-    front_left_wheel: {p: 1.0, i: 0, d: 0.01} 
-    front_right_wheel: {p: 1.0, i: 0, d: 0.01} 
-    rear_left_wheel: {p: 1.0, i: 0, d: 0.01} 
-    rear_right_wheel: {p: 1.0, i: 0, d: 0.01} 

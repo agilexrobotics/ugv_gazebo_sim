@@ -1,9 +1,0 @@
-# Configuration for the ros_controllers joint_state_controller.
-joint_state_publisher:
-    type: "joint_state_controller/JointStateController"
-    publish_rate: 100
-front_steer_left_joint_position_controller:
-  type: position_controllers/JointPositionController
-  joint: front_steer_left_joint
-  pid: {p: 100, i: 10, d: 0, i_clamp: 100}
-

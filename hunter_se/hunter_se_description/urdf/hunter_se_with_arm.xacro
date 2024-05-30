@@ -1,0 +1,16 @@
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="hunter_se_elite">
+<xacro:include filename="$(find hunter_se_description)/urdf/hunter_se_description_with_box.xacro"/>
+<xacro:include filename="$(find elite_description)/urdf/ec66_description.urdf"/>
+
+
+<joint name="base_to_arm_joint" type="fixed">
+    <origin xyz="-0.2 0.0 0.0" rpy="0.0 0.0 3.14"/>
+    <parent link="base_link"/>
+    <child link="arm_base"/>
+    <axis xyz="0.0 0.0 0.0"/>
+    <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+</joint>
+
+
+
+</robot>

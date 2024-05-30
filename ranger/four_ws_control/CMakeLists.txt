@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(hunter_se_gazebo)
+project(four_ws_control)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -20,10 +20,7 @@ find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
-install(
-  DIRECTORY launch xacro world scripts
-  DESTINATION share/${PROJECT_NAME}
-)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -34,5 +31,20 @@ if(BUILD_TESTING)
   #set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+install(
+  DIRECTORY
+    scripts
+    launch
+  DESTINATION
+    share/${PROJECT_NAME}/
+)
+
+install(
+  PROGRAMS
+  scripts/robot_control.py
+  launch/four_ws_control.launch.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 ament_package()

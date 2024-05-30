@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<robot name="zinger" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+    <!--
+        GAZEBO MACROS
+    -->
+    <!--
+        Define Gazebo specific macro's here because this file isn't included if we're not running
+        Gazebo
+    -->
+    <xacro:macro name="gazebo_reference_link_wheel" params="name">
+        <gazebo reference="${name}_wheel_link">
+            <mu1>0.9</mu1>
+            <mu2>0.9</mu2>
+            <kp>500000.0</kp>
+            <kd>10.0</kd>
+            <minDepth>0.001</minDepth>
+            <maxVel>0.1</maxVel>
+            <fdir1>1 0 0</fdir1>
+            <selfCollide>true</selfCollide>
+        </gazebo>
+    </xacro:macro>
+
+    <!-- Sensors -->
+
+    <!--
+        GAZEBO
+    -->
+    <xacro:gazebo_reference_link_wheel name="fl_steering" />
+    <xacro:gazebo_reference_link_wheel name="fr_steering" />
+    <xacro:gazebo_reference_link_wheel name="rl_steering" />
+    <xacro:gazebo_reference_link_wheel name="rr_steering" />
+
+    <xacro:gazebo_reference_link_wheel name="fl" />
+    <xacro:gazebo_reference_link_wheel name="fr" />
+    <xacro:gazebo_reference_link_wheel name="rl" />
+    <xacro:gazebo_reference_link_wheel name="rr" />
+
+    <xacro:macro name="drive_module_assembly" params="name chassis_length chassis_width chassis_height wheel_mass wheel_radius wheel_width steering_mass steering_radius steering_thickness offset x_reflect y_reflect">
+        <xacro:steering_assembly
+            name="${name}"
+            mass="${steering_mass}"
+            chassis_length="${chassis_length}"
+            chassis_width="${chassis_width}"
+            chassis_height="${chassis_height}"
+            steering_radius="${steering_radius}"
+            thickness="${steering_thickness}"
+            wheel_radius="${wheel_radius}"
+            offset="${offset}"
+            x_reflect="${x_reflect}"
+            y_reflect="${y_reflect}"/>
+        <xacro:wheel_assembly
+            name="${name}"
+            mass="${wheel_mass}"
+            radius="${wheel_radius}"
+            width="${wheel_width}"
+            offset="${offset + 0.5 * steering_thickness}"/>
+    </xacro:macro>
+
+
+<!-- 
+    <gazebo>
+        <plugin
+                filename="ign_ros2_control-system"
+                name="ign_ros2_control::IgnitionROS2ControlPlugin">
+            <parameters>$(find ranger_mini)/config/ranger_mini_joint.yaml</parameters>
+        </plugin>
+    </gazebo>
+    <gazebo>
+         <plugin
+                filename="libignition-gazebo-pose-publisher-system.so"
+                name="ignition::gazebo::systems::PosePublisher">
+            <publish_link_pose>true</publish_link_pose>
+            <publish_sensor_pose>true</publish_sensor_pose>
+            <publish_collision_pose>false</publish_collision_pose>
+            <publish_visual_pose>false</publish_visual_pose>
+            <publish_model_pose>true</publish_model_pose>
+            <publish_nested_model_pose>true</publish_nested_model_pose>
+            <use_pose_vector_msg>true</use_pose_vector_msg>
+            <static_publisher>true</static_publisher>
+            <static_update_frequency>-1</static_update_frequency>
+        </plugin>
+    </gazebo> -->
+</robot>
