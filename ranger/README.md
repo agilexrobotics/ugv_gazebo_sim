@@ -103,6 +103,13 @@ git clone https://github.com/agilexrobotics/ugv_sim.git -b humble
 cd ranger_ws
 ```
 
+​	Due to the large size of some models, they cannot be uploaded to GitHub directly. Therefore, the models have been compressed. After downloading, you will need to extract the models.
+
+```
+cd ranger_ws/src/ugv_gazebo_sim/ranger/ranger_mini/meshes
+unzip ranger_base.zip
+```
+
 ​		Confirm whether the dependency of the function package is installed
 
 ```
