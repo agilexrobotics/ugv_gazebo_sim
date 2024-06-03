@@ -10,7 +10,7 @@ from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description():
     urdf_tutorial_path = get_package_share_path('hunter_se_description')
-    default_model_path = urdf_tutorial_path / 'urdf/hunter_se_description_with_box.xacro'
+    default_model_path = urdf_tutorial_path / 'urdf/hunter_se_description.xacro'
     default_rviz_config_path = urdf_tutorial_path / 'rviz/rviz.rviz'
 
     gui_arg = DeclareLaunchArgument(name='gui', default_value='true', choices=['true', 'false'],
