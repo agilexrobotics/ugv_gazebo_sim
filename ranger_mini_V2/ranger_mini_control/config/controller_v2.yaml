@@ -20,7 +20,7 @@
     # wheel_separation : 0.122
     wheel_separation_h : 0.36
     wheel_separation_w : 0.34317
-    wheel_radius : 0.1
+    wheel_radius : 0.085
     wheel_steering_y_offset : -0.1
     # wheel_steering_x_offset : 0.03
 
@@ -57,21 +57,21 @@
     /gazebo_ros_control:
       pid_gains:
         fl_steering_wheel:
-          p: 50
-          i: 1
-          d: 0.01
+          p: 300
+          i: 0
+          d: 10
         fr_steering_wheel:
-          p: 50
-          i: 1
-          d: 0.01
+          p: 300
+          i: 0
+          d: 10
         rl_steering_wheel:
-          p: 50
-          i: 1
-          d: 0.01
+          p: 300
+          i: 0
+          d: 10
         rr_steering_wheel:
-          p: 50
-          i: 1
-          d: 0.01
+          p: 300
+          i: 0
+          d: 10
         fl_wheel: #front_left_wheel
           p: 10.0
           i: 1

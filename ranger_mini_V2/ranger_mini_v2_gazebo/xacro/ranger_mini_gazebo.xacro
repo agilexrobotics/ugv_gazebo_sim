@@ -5,6 +5,7 @@
 
     <xacro:include filename="$(find ranger_mini_v2)/urdf/ranger_l.xacro" />
     <xacro:include filename="$(find ranger_mini_v2)/urdf/ranger_r.xacro" />
+    <xacro:include filename="$(find ranger_mini_v2_gazebo)/xacro/ranger_mini.gazebo.xacro" /> -->
 
     <!-- Variables -->
     <xacro:property name="M_PI" value="3.14159"/>
@@ -25,7 +26,7 @@
     <link name="base_link">
         <inertial>
             <origin xyz="0.0 0.0 0.0"/>
-            <mass value="10"/>
+            <mass value="18"/>
             <inertia ixx="1" ixy="0.0" ixz="0.0" iyy="1" iyz="0.0" izz="1"/>
         </inertial>
         <visual>
@@ -35,7 +36,7 @@
             </geometry>
         </visual>
         <collision>
-            <origin xyz="0 0 -0.1" rpy="0 0 0" />
+            <origin xyz="0 0 0.0" rpy="0 0 0" />
             <geometry>
                 <box size="0.5 0.35 0.2"/>
             </geometry>
@@ -91,18 +92,18 @@
             <collision>
                 <origin xyz="0 0 0" rpy="1.57 0 0" />
                 <geometry>
-                    <cylinder length="0.08" radius="0.08" />
+                    <cylinder length="0.08" radius="0.085" />
                 </geometry>
-                     <contact>
+                     <!-- <contact>
                          <ode>
                         <min_depth>0.001</min_depth>
                          </ode>
-                    </contact>
+                    </contact> -->
             </collision>
         </link>
 
         <joint name="fl_wheel" type="continuous">
-            <origin xyz="0.03 0.01 -0.12" rpy="0 0 0" />
+            <origin xyz="0.0 0.0 -0.12" rpy="0 0 0" />
             <parent link="fl_steering_wheel_link"/>
             <child link="fl_wheel_link"/>
             <axis xyz="0 1 0" rpy="0 0 0" />
@@ -153,11 +154,11 @@
                 <geometry>
                     <cylinder length="0.08" radius="0.085" />
                 </geometry>
-                     <contact>
+                     <!-- <contact>
                          <ode>
                         <min_depth>0.001</min_depth>
                          </ode>
-                    </contact>
+                    </contact> -->
             </collision>
         </link>
 
@@ -212,13 +213,13 @@
             <collision>
                 <origin xyz="0 0 0" rpy="1.57 0 0" />
                 <geometry>
-                    <cylinder length="0.08" radius="0.08" />
+                    <cylinder length="0.08" radius="0.085" />
                 </geometry>
-                     <contact>
+                     <!-- <contact>
                          <ode>
                         <min_depth>0.001</min_depth>
                          </ode>
-                    </contact>
+                    </contact> -->
             </collision>
         </link>
 
@@ -272,13 +273,13 @@
             <collision>
                 <origin xyz="0 0 0" rpy="1.57 0 0" />
                 <geometry>
-                    <cylinder length="0.08" radius="0.08" />
+                    <cylinder length="0.08" radius="0.085" />
                 </geometry>
-                     <contact>
+                     <!-- <contact>
                          <ode>
                         <min_depth>0.001</min_depth>
                          </ode>
-                    </contact>
+                    </contact> -->
             </collision>
         </link>
 

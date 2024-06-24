@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/base_link.STL" />
+          filename="package://ranger_mini_v2/meshes/ranger_base.dae" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/base_link.STL" />
+          filename="package://ranger_mini_v2/meshes/ranger_base.dae" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/fr_Link.STL" />
+          filename="package://ranger_mini_v2/meshes/fr_Link.STL" />
       </geometry>
       <material
         name="">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/fr_Link.STL" />
+          filename="package://ranger_mini_v2/meshes/fr_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -119,7 +119,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/fl_Link.STL" />
+          filename="package://ranger_mini_v2/meshes/fl_Link.STL" />
       </geometry>
       <material
         name="">
@@ -133,7 +133,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/fl_Link.STL" />
+          filename="package://ranger_mini_v2/meshes/fl_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -172,7 +172,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/br_Link.STL" />
+          filename="package://ranger_mini_v2/meshes/br_Link.STL" />
       </geometry>
       <material
         name="">
@@ -186,7 +186,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/br_Link.STL" />
+          filename="package://ranger_mini_v2/meshes/br_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -225,7 +225,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/bl_Link.STL" />
+          filename="package://ranger_mini_v2/meshes/bl_Link.STL" />
       </geometry>
       <material
         name="">
@@ -239,7 +239,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_mini/meshes/bl_Link.STL" />
+          filename="package://ranger_mini_v2/meshes/bl_Link.STL" />
       </geometry>
     </collision>
   </link>

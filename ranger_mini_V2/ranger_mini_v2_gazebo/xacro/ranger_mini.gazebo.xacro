@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<robot name="ranger_mini_v2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- Gazebo references -->
+
+<gazebo reference="base_link">
+      <mu1 value="0.9" />
+      <mu2 value="0.9" />
+  <!-- <kp  value="10000000.0" />
+  <kd  value="1.0" /> -->
+  <material>Gazebo/White</material>
+</gazebo>
+
+	<gazebo reference="fl_steering_wheel">
+	  <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="0.9" />
+      <mu2 value="0.9" />
+     <material>Gazebo/Grey</material>
+    </gazebo>
+
+	<gazebo reference="fr_steering_wheel">
+	  <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="0.9" />
+      <mu2 value="0.9" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+  
+  	<gazebo reference="rl_steering_wheel">
+	  <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="0.9" />
+      <mu2 value="0.9" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+  	<gazebo reference="rr_steering_wheel">
+	  <!-- <selfCollide>false</selfCollide> -->
+      <mu1 value="0.9" />
+      <mu2 value="0.9" />
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="fl_wheel_link">
+      <!-- <selfCollide>false</selfCollide> -->
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <kp>10000000.0</kp>
+    <kd>1.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
+      
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="fr_wheel_link">
+      <!-- <selfCollide>false</selfCollide> -->
+      <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <kp>10000000.0</kp>
+    <kd>1.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="rl_wheel_link">
+      <!-- <selfCollide>false</selfCollide> -->
+      <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <kp>10000000.0</kp>
+    <kd>1.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="rr_wheel_link">
+      <!-- <selfCollide>false</selfCollide> -->
+      <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <kp>10000000.0</kp>
+    <kd>1.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>0.1</maxVel>
+    <fdir1>1 0 0</fdir1>
+      <material>Gazebo/Grey</material>
+    </gazebo>
+
+
+</robot>
+ 
