@@ -25,8 +25,6 @@ Ranger_min_V2 仿真过程
 
 ​	Download and install gazebo-ros function package, gazebo-ros is the communication interface between gazebo and ROS, and connect the ROS and Gazebo
 
-下载安装gazebo相关的依赖和gazebo-ros-control等功能包；gazebo-ros是gazebo与ROS之间的通信接口，连接ROS与Gazebo
-
 ```
 sudo apt-get install ros-humble-gazebo-*
 ```
@@ -85,12 +83,6 @@ mkdir src
 cd src
 ```
 
-​		Initialize folder
-
-```
-catkin_init_workspace
-```
-
 ​		Download simulation model function package
 
 ```
@@ -110,13 +102,7 @@ cd ranger_ws/src/ugv_gazebo_sim/ranger/ranger_mini/meshes
 unzip ranger_base.zip
 ```
 
-​		Confirm whether the dependency of the function package is installed
-
-```
-rosdep install -i --from-path src --rosdistro humble -y
-```
-
-​		Compile
+​	Compile
 
 ```
 colcon build 
@@ -141,8 +127,6 @@ source install/setup.bash
 ```
 ros2 launch ranger_mini ranger_mini_v2_display.launch.py 
 ```
-
-![说明文字](./image/rviz.png)
 
 ![](imgae/rviz.png)
 
