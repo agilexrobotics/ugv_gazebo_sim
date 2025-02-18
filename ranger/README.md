@@ -102,6 +102,12 @@ cd ranger_ws/src/ugv_gazebo_sim/ranger/ranger_mini/meshes
 unzip ranger_base.zip
 ```
 
+​	Because a yaml file needs to be invoked in the gazebo simulation, the absolute path is used, which needs to be modified according to the actual path
+
+​	Open the ranger_mini_gazebo.xacro file and modify the following path. Replace the path in the red box with the path in the actual computer
+
+![](imgae/parameters.png)
+
 ​	Compile
 
 ```
