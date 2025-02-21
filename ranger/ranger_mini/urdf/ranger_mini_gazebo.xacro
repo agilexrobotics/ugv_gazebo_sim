@@ -87,6 +87,7 @@
             <parent link="fl_steering_wheel_link"/>
             <child link="fl_wheel_link"/>
             <axis xyz="0 1 0" rpy="0 0 0" />
+            <limit effort="100" velocity="10" />
         </joint>
 
 
@@ -147,6 +148,8 @@
             <parent link="fr_steering_wheel_link"/>
             <child link="fr_wheel_link"/>
             <axis xyz="0 1 0" rpy="0 0 0" />
+            <limit effort="100" velocity="10" />
+
         </joint>
 
 
@@ -208,6 +211,8 @@
             <parent link="rl_steering_wheel_link"/>
             <child link="rl_wheel_link"/>
             <axis xyz="0 1 0" rpy="0 0 0" />
+            <limit effort="100" velocity="10" />
+
         </joint>
 
 
@@ -268,6 +273,8 @@
             <parent link="rr_steering_wheel_link"/>
             <child link="rr_wheel_link"/>
             <axis xyz="0 1 0" rpy="0 0 0" />
+            <limit effort="100" velocity="10" />
+
         </joint>
 
 	<transmission name="fl_steering_wheel_trans">
@@ -370,6 +377,8 @@
       </command_interface>
       <state_interface name="velocity"/>
       <state_interface name="effort"/>
+      <state_interface name="position"/>
+
     </joint>
 
     <joint name="fr_wheel">
@@ -379,6 +388,8 @@
       </command_interface>
       <state_interface name="velocity"/>
       <state_interface name="effort"/>
+      <state_interface name="position"/>
+
     </joint>
 
     <joint name="rl_wheel">
@@ -388,6 +399,8 @@
       </command_interface>
       <state_interface name="velocity"/>
       <state_interface name="effort"/>
+      <state_interface name="position"/>
+
     </joint>
 
     <joint name="rr_wheel">
@@ -397,6 +410,8 @@
       </command_interface>
       <state_interface name="velocity"/>
       <state_interface name="effort"/>
+      <state_interface name="position"/>
+
     </joint>
 
     <joint name="fl_steering_wheel">
@@ -440,35 +455,9 @@
     </joint>
   </ros2_control> 
 
-
-<!-- <gazebo>
-
-    <plugin name="object_controller" filename="libgazebo_ros_planar_move.so">
-
-      <ros>
-        <namespace>/</namespace>
-
-      </ros>
-
-      <update_rate>100</update_rate>
-      <publish_rate>10</publish_rate>
-
-      <publish_odom>true</publish_odom>
-      <publish_odom_tf>true</publish_odom_tf>
-
-      <odometry_frame>demo</odometry_frame>
-      <robot_base_frame>link</robot_base_frame>
-
-      <covariance_x>0.0001</covariance_x>
-      <covariance_y>0.0001</covariance_y>
-      <covariance_yaw>0.01</covariance_yaw>
-
-    </plugin>
-</gazebo> -->
-
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-            <parameters>/home/agilex/ugv_sim/src/ranger_mini/config/ranger_mini_joint.yaml</parameters>
+            <parameters>/home/agilex/ugv_sim_ws/src/ugv_gazebo_sim/ranger/ranger_mini/config/ranger_mini_joint.yaml</parameters>
         </plugin>
     </gazebo>
 

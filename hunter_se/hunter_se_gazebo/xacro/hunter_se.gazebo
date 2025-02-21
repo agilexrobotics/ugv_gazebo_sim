@@ -81,7 +81,7 @@
 
       <publish_odom>true</publish_odom>
       <publish_odom_tf>true</publish_odom_tf>
-      <publish_wheel_tf>false</publish_wheel_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
       <publish_distance>true</publish_distance>
 
       <odometry_frame>odom</odometry_frame>

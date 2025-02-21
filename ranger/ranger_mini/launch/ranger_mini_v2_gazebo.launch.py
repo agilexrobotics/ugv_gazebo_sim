@@ -115,12 +115,6 @@ def generate_launch_description():
     executable='robot_state_publisher',
     parameters=[{'robot_description': Command(['xacro ', urdf_model]),'use_sim_time': use_sim_time}]
     )
-  # start_robot_state_publisher_cmd = Node(
-  #       package='robot_state_publisher',
-  #       executable='robot_state_publisher',
-  #       arguments=[default_urdf_model_path]
-  #   )
-
 
   # Publish the joint states of the robot
   start_joint_state_publisher_cmd = Node(
@@ -136,10 +130,6 @@ def generate_launch_description():
     executable='joint_state_publisher_gui',
     name='joint_state_publisher_gui',
     parameters=[{'use_sim_time': use_sim_time}])
-  # start_dummy_sensors=Node(
-  #   package='dummy_sensors', 
-  #   node_executable='dummy_joint_states', 
-  #   output='screen')
 
   # Launch RViz
   start_rviz_cmd = Node(
@@ -219,7 +209,7 @@ def generate_launch_description():
   ld.add_action(start_gazebo_client_cmd)
   ld.add_action(spawn_entity_cmd)
   ld.add_action(start_robot_state_publisher_cmd)
-  # ld.add_action(start_joint_state_publisher_gui_node)
+  ld.add_action(start_joint_state_publisher_cmd)
   ld.add_action(controller)
 
   ld.add_action(forward_position_controller)
@@ -228,6 +218,6 @@ def generate_launch_description():
 
 
   # ld.add_action(start_dummy_sensors)
-  # ld.add_action(start_rviz_cmd)
+  ld.add_action(start_rviz_cmd)
  
   return ld
