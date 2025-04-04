@@ -22,7 +22,7 @@ def generate_launch_description():
   gazebo_models_path = 'models'
   package_name = 'scout_description'
   robot_name_in_model = 'scout_mini'
-  rviz_config_file_path = 'rviz/urdf.rviz'
+  rviz_config_file_path = 'rviz/scout_mini_config.rviz'
   urdf_file_path = 'urdf/mini.xacro'
   world_file_path = 'world/neighborhood.world'
  
