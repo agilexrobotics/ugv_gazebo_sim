@@ -24,13 +24,13 @@ def generate_launch_description():
   robot_name_in_model = 'scout_mini'
   rviz_config_file_path = 'rviz/scout_mini_config.rviz'
   urdf_file_path = 'urdf/mini.xacro'
-  world_file_path = 'worlds/clearpath_playpen.world'
+  world_file_path = 'worlds/obstacles.world'
  
   # Pose where we want to spawn the robot
-  spawn_x_val = '0.0'
-  spawn_y_val = '0.0'
+  spawn_x_val = '7.0'
+  spawn_y_val = '-8.0'
   spawn_z_val = '0.0'
-  spawn_yaw_val = '0.00'
+  spawn_yaw_val = '1.57'
  
   ############ You do not need to change anything below this line #############
  
