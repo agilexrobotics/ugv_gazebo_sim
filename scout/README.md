@@ -178,6 +178,25 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ![img](image/teleop.png) 
 
 
+#Run obstacles world
 
- 
+```
+ros2 launch scout_gazebo_sim scout_mini_obstacles_world.launch.py 
+```
+![img](image/obstacles_map.png) 
 
+#Run AMCL localization (switch durability to Transient Local for the map to show, after setting initial pose)
+
+```
+ros2 launch scout_gazebo_sim localization_launch.py use_sim_time:=true
+
+```
+
+#Run Nav2 navigation
+
+```
+ros2 launch scout_gazebo_sim navigation_launch.py use_sim_time:=true
+
+```
+
+![img](image/scout_mini_nav2_rviz.png) 
