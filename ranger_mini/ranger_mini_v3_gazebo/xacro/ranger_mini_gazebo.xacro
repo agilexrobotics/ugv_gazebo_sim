@@ -84,7 +84,7 @@
       link="fr_steering_wheel_link" />
     <axis
       xyz="0 0 -1" />
-    <limit effort="5" velocity="6.28"  lower="-2.1" upper="2.1" />
+    <limit effort="5" velocity="1"  lower="-2.1" upper="2.1" />
 
   </joint>
 
@@ -174,7 +174,7 @@
       link="fl_steering_wheel_link" />
     <axis
       xyz="0 0 -1" />
-        <limit effort="5" velocity="6.28"  lower="-2.1" upper="2.1" />
+        <limit effort="5" velocity="1"  lower="-2.1" upper="2.1" />
 
   </joint>
 
@@ -263,7 +263,7 @@
       link="rl_steering_wheel_link" />
     <axis
       xyz="0 0 -1" />
-        <limit effort="5" velocity="6.28"  lower="-2.1" upper="2.1" />
+        <limit effort="5" velocity="1"  lower="-2.1" upper="2.1" />
   </joint>
 
         <link name="rl_wheel_link">
@@ -323,7 +323,7 @@
         <parent link="base_link"/>
         <child link="rr_steering_wheel_link"/>
         <axis xyz="0 0 -1" rpy="0 0 0" />
-        <limit effort="5" velocity="6.28"  lower="-2.1" upper="2.1" />
+        <limit effort="5" velocity="1"  lower="-2.1" upper="2.1" />
     </joint>
 
        <link name="rr_wheel_link">
