@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="bunker_pro2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0501243835653207 1.13148717175715E-05 -0.171970090908704"
+        rpy="0 0 0" />
+      <mass
+        value="117.130114034265" />
+      <inertia
+        ixx="2.43689701537572"
+        ixy="0.000532557188817471"
+        ixz="-0.239610929767167"
+        iyy="8.49948250205566"
+        iyz="-0.00014416158632506"
+        izz="8.8459667438641" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bunker_pro2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://bunker_pro2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
