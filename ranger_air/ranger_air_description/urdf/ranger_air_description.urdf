@@ -225,7 +225,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_air_description/meshes/dae/camera_link_v3.dae" />
+          filename="package://ranger_air_description/meshes/dae/camera_link.dae" />
       </geometry>
       <material
         name="">
@@ -239,7 +239,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_air_description/meshes/camera_link.STL" />
+          filename="package://ranger_air_description/meshes/dae/camera_link.dae" />
       </geometry>
     </collision>
   </link>
@@ -292,7 +292,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_air_description/meshes/steering_link1.STL" />
+          filename="package://ranger_air_description/meshes/dae/fl_streering_link.dae" />
       </geometry>
     </collision>
   </link>
@@ -345,7 +345,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_air_description/meshes/wheel_link1.STL" />
+          filename="package://ranger_air_description/meshes/dae/fl_wheel_link.dae" />
       </geometry>
     </collision>
   </link>
@@ -398,7 +398,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_air_description/meshes/steering_link2.STL" />
+          filename="package://ranger_air_description/meshes/dae/fr_steering_link.dae" />
       </geometry>
     </collision>
   </link>
@@ -451,7 +451,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_air_description/meshes/wheel_link2.STL" />
+          filename="package://ranger_air_description/meshes/dae/fr_wheel_link.dae" />
       </geometry>
     </collision>
   </link>
@@ -504,7 +504,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_air_description/meshes/steering_link3.STL" />
+          filename="package://ranger_air_description/meshes/dae/rr_steering_link.dae" />
       </geometry>
     </collision>
   </link>
@@ -557,7 +557,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_air_description/meshes/wheel_link3.STL" />
+          filename="package://ranger_air_description/meshes/dae/rr_wheel_link.dae" />
       </geometry>
     </collision>
   </link>
@@ -610,7 +610,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_air_description/meshes/steering_link4.STL" />
+          filename="package://ranger_air_description/meshes/dae/rl_steering_link.dae" />
       </geometry>
     </collision>
   </link>
@@ -663,7 +663,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://ranger_air_description/meshes/wheel_link4.STL" />
+          filename="package://ranger_air_description/meshes/dae/rl_wheel_link.dae" />
       </geometry>
     </collision>
   </link>
