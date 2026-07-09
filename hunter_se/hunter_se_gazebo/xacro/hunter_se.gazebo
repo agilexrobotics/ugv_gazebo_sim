@@ -30,7 +30,7 @@
 </gazebo>
 
 <gazebo reference="re_left_link">
-  <mu1 value="22.1"/>
+  <mu1 value="2.1"/>
   <mu2 value="1.0"/>
   <kp  value="10000000.0" />
   <kd  value="1.0" />
@@ -39,7 +39,7 @@
 </gazebo>
 
 <gazebo reference="re_right_link">
-  <mu1 value="22.1"/>
+  <mu1 value="2.1"/>
   <mu2 value="1.0"/>
   <kp  value="10000000.0" />
   <kd  value="1.0" />
@@ -66,7 +66,7 @@
       <right_steering_joint>fr_steer_right_joint</right_steering_joint>
       <steering_wheel_joint>front_steer_joint</steering_wheel_joint>
 
-      <max_steer>0.6458</max_steer>
+      <max_steer>0.52</max_steer>
 
       <max_steering_angle>7.85</max_steering_angle>
 

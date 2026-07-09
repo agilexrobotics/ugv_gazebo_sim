@@ -1,0 +1,13 @@
+2025-10-15 19:51:49,451 INFO  Logger.cs: 70 - 
+--------------------------------------------------------------------------------
+2025-10-15 19:51:49,484 INFO  Logger.cs: 71 - Logging commencing for SW2URDF exporter
+2025-10-15 19:51:49,485 INFO  Logger.cs: 73 - Commit version 1.6.0-1-g15f4949
+2025-10-15 19:51:49,486 INFO  Logger.cs: 74 - Build version 1.6.7594.29634
+2025-10-15 19:51:49,487 INFO  SwAddin.cs: 192 - Attempting to connect to SW
+2025-10-15 19:51:49,487 INFO  SwAddin.cs: 197 - Setting up callbacks
+2025-10-15 19:51:49,488 INFO  SwAddin.cs: 201 - Setting up command manager
+2025-10-15 19:51:49,488 INFO  SwAddin.cs: 204 - Adding command manager
+2025-10-15 19:51:49,490 INFO  SwAddin.cs: 263 - Adding Assembly export to file menu
+2025-10-15 19:51:49,490 INFO  SwAddin.cs: 272 - Adding Part export to file menu
+2025-10-15 19:51:49,491 INFO  SwAddin.cs: 210 - Adding event handlers
+2025-10-15 19:51:49,536 INFO  SwAddin.cs: 217 - Connecting plugin to SolidWorks

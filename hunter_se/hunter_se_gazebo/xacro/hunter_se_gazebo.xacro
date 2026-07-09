@@ -55,12 +55,12 @@
       <mass
         value="0.5" />
       <inertia
-        ixx="0.0222"
+        ixx="0.000222"
         ixy="0.0"
         ixz="0.0"
-        iyy="0.0222"
+        iyy="0.000222"
         iyz="0.0"
-        izz="0.0378075" />
+        izz="0.000378075" />
     </inertial>
     <visual>
       <origin
@@ -86,7 +86,7 @@
   </link>
   <joint
     name="fr_steer_left_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0.34058 0.24619 -0.1535"
       rpy="0 0 0" />
@@ -97,8 +97,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.69"
-      upper="0.69"
+      lower="-0.52"
+      upper="0.52"
       effort="10"
       velocity="0.69" />
   </joint>
@@ -109,14 +109,14 @@
         xyz="-3.5837499634539E-10 4.97346158701006E-09 -0.016356334080185"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="3" />
       <inertia
-        ixx="0.0222"
+        ixx="0.014583"
         ixy="0.0"
         ixz="0.0"
-        iyy="0.0222"
+        iyy="0.014583"
         iyz="0.0"
-        izz="0.0378075" />
+        izz="0.0281535"/>
     </inertial>
     <visual>
       <origin
@@ -139,7 +139,7 @@
       <geometry>
         <!-- <mesh
           filename="file://$(find hunter_se_description)/meshes/fr_left_link.STL" /> -->
-          <cylinder radius="0.13" length="0.045"/>
+          <cylinder radius="0.137" length="0.045"/>
       </geometry>
     </collision>
   </link>
@@ -155,7 +155,7 @@
       link="fr_left_link" />
     <axis
       xyz="0 0 -1" />
-    <limit effort="10" velocity="100" />
+    <limit effort="10" velocity="1" />
   </joint>
   <link
     name="fr_steer_right_link">
@@ -164,14 +164,14 @@
         xyz="0.000274981985673328 -0.0163540222836661 -3.24802407192237E-11"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="0.5" />
       <inertia
-        ixx="0.0222"
+        ixx="0.000222"
         ixy="0.0"
         ixz="0.0"
-        iyy="0.0222"
+        iyy="0.000222"
         iyz="0.0"
-        izz="0.0378075" />
+        izz="0.000378075" />
     </inertial>
     <visual>
       <origin
@@ -197,7 +197,7 @@
   </link>
   <joint
     name="fr_steer_right_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0.34219 -0.24619 -0.1535"
       rpy="0 0 0" />
@@ -208,8 +208,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-0.69"
-      upper="0.69"
+      lower="-0.52"
+      upper="0.52"
       effort="10"
       velocity="0.69" />
   </joint>
@@ -220,14 +220,14 @@
         xyz="0.00027498198567355 3.24801296969213E-11 -0.0163540222836661"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="3" />
       <inertia
-        ixx="0.0222"
+        ixx="0.014583"
         ixy="0.0"
         ixz="0.0"
-        iyy="0.0222"
+        iyy="0.014583"
         iyz="0.0"
-        izz="0.0378075" />
+        izz="0.0281535"/>
     </inertial>
     <visual>
       <origin
@@ -250,7 +250,7 @@
       <geometry>
         <!-- <mesh
           filename="file://$(find hunter_se_description)/meshes/fr_right_link.STL" /> -->
-          <cylinder radius="0.13" length="0.045"/>
+          <cylinder radius="0.137" length="0.045"/>
 
       </geometry>
     </collision>
@@ -267,7 +267,7 @@
       link="fr_right_link" />
     <axis
       xyz="0 0 1" />
-    <limit effort="10" velocity="100" />
+    <limit effort="10" velocity="1" />
 
   </joint>
 
@@ -278,14 +278,14 @@
         xyz="1.245E-09 1.7252E-06 -0.010284"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="3" />
       <inertia
-        ixx="0.0222"
+        ixx="0.014583"
         ixy="0.0"
         ixz="0.0"
-        iyy="0.0222"
+        iyy="0.014583"
         iyz="0.0"
-        izz="0.0378075" />
+        izz="0.0281535"/>
     </inertial>
     <visual>
       <origin
@@ -308,7 +308,7 @@
       <geometry>
         <!-- <mesh
           filename="file://$(find hunter_se_description)/meshes/re_left_link.STL" /> -->
-          <cylinder radius="0.13" length="0.045"/>
+          <cylinder radius="0.137" length="0.045"/>
 
       </geometry>
     </collision>
@@ -325,7 +325,7 @@
       link="re_left_link" />
     <axis
       xyz="0 0 -1" />
-    <limit effort="10" velocity="100" />
+    <limit effort="10" velocity="1" />
 
   </joint>
   <link
@@ -335,14 +335,14 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="1" />
+        value="3" />
       <inertia
-        ixx="0.0222"
+        ixx="0.014583"
         ixy="0.0"
         ixz="0.0"
-        iyy="0.0222"
+        iyy="0.014583"
         iyz="0.0"
-        izz="0.0378075" />
+        izz="0.0281535"/>
     </inertial>
     <visual>
       <origin
@@ -365,7 +365,7 @@
       <geometry>
         <!-- <mesh
           filename="file://$(find hunter_se_description)/meshes/re_right_link.STL" /> -->
-          <cylinder radius="0.13" length="0.045"/>
+          <cylinder radius="0.137" length="0.045"/>
       </geometry>
     </collision>
   </link>
@@ -381,7 +381,7 @@
       link="re_right_link" />
     <axis
       xyz="0 0 1" />
-    <limit effort="10" velocity="100" />
+    <limit effort="10" velocity="1" />
   </joint>
 
   <link

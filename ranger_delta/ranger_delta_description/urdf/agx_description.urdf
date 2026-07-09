@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="agx_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00401714128029725 -0.0095612252162035 0.136523007187438"
+        rpy="0 0 0" />
+      <mass
+        value="4.66571167619612" />
+      <inertia
+        ixx="0.0438692851006923"
+        ixy="-2.65606919059867E-05"
+        ixz="0.000117164631254687"
+        iyy="0.034222178177559"
+        iyz="-1.33690788788058E-05"
+        izz="0.0717458146990985" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/dae/base_link.dae" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.00020635639316674 -2.35913680941993E-05 6.5758576525396E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.000545735175152403" />
+      <inertia
+        ixx="2.27197398719216E-07"
+        ixy="-1.38658538749402E-22"
+        ixz="4.79767829408248E-22"
+        iyy="2.08716915895718E-08"
+        iyz="1.392144772577E-11"
+        izz="2.0633230530051E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.269429617705885 0 0.170471043408036"
+      rpy="0 -0.139626340159547 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="imu_link">
+    <inertial>
+      <origin
+        xyz="-7.5117370892025E-05 7.51173708920185E-05 0.0015"
+        rpy="0 0 0" />
+      <mass
+        value="0.000426" />
+      <inertia
+        ixx="5.32909624413146E-09"
+        ixy="-1.72403755868543E-10"
+        ixz="-1.46688700166429E-24"
+        iyy="5.32909624413147E-09"
+        iyz="-1.33818263579742E-25"
+        izz="1.00191924882629E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/imu_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/imu_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="imu_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00269279792190514 0.117506197251626 0.172572605714962"
+      rpy="-1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="-0.000519653097243722 1.40582277136291E-06 -0.0153588972954363"
+        rpy="0 0 0" />
+      <mass
+        value="0.0261173591903215" />
+      <inertia
+        ixx="9.62352103257866E-06"
+        ixy="-1.40729107640038E-11"
+        ixz="2.47092730045243E-08"
+        iyy="9.5183581780262E-06"
+        iyz="4.21438208002377E-12"
+        izz="1.72745370263659E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/dae/lidar_link.dae" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 0.501960784313725 0.4" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0.208499999999796 0 0.26805"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera_back_link">
+    <inertial>
+      <origin
+        xyz="-0.00772337441159976 9.00870394958015E-05 -0.000242677966108155"
+        rpy="0 0 0" />
+      <mass
+        value="0.031807044617052" />
+      <inertia
+        ixx="1.19183830276969E-05"
+        ixy="2.62706916119488E-08"
+        ixz="2.95098927434596E-07"
+        iyy="4.39930252946608E-06"
+        iyz="-1.35990864467845E-08"
+        izz="1.02713446396506E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/camera_back_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.411764705882353 0.411764705882353 0.411764705882353 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/camera_back_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_back_joint"
+    type="fixed">
+    <origin
+      xyz="-0.264464976968079 1.2216555984981E-05 0.216750000000002"
+      rpy="0 0 3.14159265358979" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_back_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="steering_link1">
+    <inertial>
+      <origin
+        xyz="-4.41226731558442E-05 0.0157129719173068 0.00410410320715254"
+        rpy="0 0 0" />
+      <mass
+        value="0.935307991518183" />
+      <inertia
+        ixx="0.00108568401564347"
+        ixy="7.74351719122828E-08"
+        ixz="-2.33490053545584E-07"
+        iyy="0.0010645394000231"
+        iyz="-0.000235815859375118"
+        izz="0.00125389488464142" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/steering_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/steering_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="steering_joint1"
+    type="continuous">
+    <origin
+      xyz="0.194 0.169 0.1355"
+      rpy="-3.14159265358979 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="steering_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_link1">
+    <inertial>
+      <origin
+        xyz="6.57989607244502E-09 -7.59169092978684E-07 0.000340423849907151"
+        rpy="0 0 0" />
+      <mass
+        value="0.820583552422171" />
+      <inertia
+        ixx="0.00105118792598525"
+        ixy="-1.65641260568635E-09"
+        ixz="-7.20794305982652E-10"
+        iyy="0.0010511896156861"
+        iyz="-2.37212383626168E-08"
+        izz="0.00137093102578645" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/wheel_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.309803921568627 0.309803921568627 0.309803921568627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/wheel_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0749999999999999"
+      rpy="-1.5707963267949 -0.0182073959539045 0" />
+    <parent
+      link="steering_link1" />
+    <child
+      link="wheel_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="steering_link2">
+    <inertial>
+      <origin
+        xyz="4.41226731559552E-05 -0.0157129719173066 0.00410410320715303"
+        rpy="0 0 0" />
+      <mass
+        value="0.93530799151818" />
+      <inertia
+        ixx="0.00108568401564347"
+        ixy="7.74351719126699E-08"
+        ixz="2.33490053544861E-07"
+        iyy="0.0010645394000231"
+        iyz="0.000235815859375117"
+        izz="0.00125389488464142" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/steering_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/steering_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="steering_joint2"
+    type="continuous">
+    <origin
+      xyz="0.194 -0.169 0.1355"
+      rpy="-3.14159265358979 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="steering_link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_link2">
+    <inertial>
+      <origin
+        xyz="-6.57989604468945E-09 -7.59169092950929E-07 -0.000340423849907123"
+        rpy="0 0 0" />
+      <mass
+        value="0.820583552422169" />
+      <inertia
+        ixx="0.00105118792598528"
+        ixy="1.65641260678919E-09"
+        ixz="-7.2079430537094E-10"
+        iyy="0.00105118961568609"
+        iyz="2.37212383623274E-08"
+        izz="0.00137093102578646" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/wheel_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.309803921568627 0.309803921568627 0.309803921568627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/wheel_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_joint2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0750000000000009"
+      rpy="-1.5707963267949 0.0182073959539064 0" />
+    <parent
+      link="steering_link2" />
+    <child
+      link="wheel_link2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="steering_link3">
+    <inertial>
+      <origin
+        xyz="0.014719396646257 -0.0100068953394268 -0.0171476491621794"
+        rpy="0 0 0" />
+      <mass
+        value="1.60627455729252" />
+      <inertia
+        ixx="0.0035973026691674"
+        ixy="-3.45191317483772E-07"
+        ixz="0.000378008241667347"
+        iyy="0.00275012578529552"
+        iyz="0.000237133659024602"
+        izz="0.00406988121308587" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/steering_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/steering_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="steering_joint3"
+    type="continuous">
+    <origin
+      xyz="-0.183500000000001 0 0.1355"
+      rpy="-3.14159265358979 0 0.00111234711893902" />
+    <parent
+      link="base_link" />
+    <child
+      link="steering_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="wheel_link3">
+    <inertial>
+      <origin
+        xyz="-6.57989604468945E-09 -7.59169092950929E-07 -0.000340423849907113"
+        rpy="0 0 0" />
+      <mass
+        value="0.82058355242217" />
+      <inertia
+        ixx="0.00105118792598529"
+        ixy="1.65641260822576E-09"
+        ixz="-7.20794305483691E-10"
+        iyy="0.0010511896156861"
+        iyz="2.37212383639768E-08"
+        izz="0.00137093102578649" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/wheel_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.309803921568627 0.309803921568627 0.309803921568627 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agx_description/meshes/wheel_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0749999999999999"
+      rpy="-1.5707963267949 0.0182073959539064 0.00111234711893902" />
+    <parent
+      link="steering_link3" />
+    <child
+      link="wheel_link3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>

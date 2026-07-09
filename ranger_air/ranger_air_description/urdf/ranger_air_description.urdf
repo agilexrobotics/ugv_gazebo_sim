@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ranger_air_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0269453553477971 4.88289151054452E-05 0.138776943804503"
+        rpy="0 0 0" />
+      <mass
+        value="9.62557497725158" />
+      <inertia
+        ixx="0.0836578300249299"
+        ixy="-0.00247163484979424"
+        ixz="0.000109124201879488"
+        iyy="0.0555064526888553"
+        iyz="7.6528928799148E-07"
+        izz="0.127512148927851" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/base_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/base_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="imu_link">
+    <inertial>
+      <origin
+        xyz="-7.51173708920111E-05 7.51173708920406E-05 0.00149999999999999"
+        rpy="0 0 0" />
+      <mass
+        value="0.000426" />
+      <inertia
+        ixx="5.32909624413146E-09"
+        ixy="-1.72403755868542E-10"
+        ixz="-2.56308956479191E-24"
+        iyy="5.32909624413147E-09"
+        iyz="-1.61090078229413E-23"
+        izz="1.00191924882629E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/imu_link.STL" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/imu_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="imu_joint"
+    type="fixed">
+    <origin
+      xyz="-0.00269279932190335 0.117006197251626 0.172572605714962"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_lidar_link">
+    <inertial>
+      <origin
+        xyz="-0.0024322542360638 -7.57434565393234E-06 -0.0156647798701829"
+        rpy="0 0 0" />
+      <mass
+        value="0.0269222563572699" />
+      <inertia
+        ixx="9.62972066845586E-06"
+        ixy="-6.69475455049995E-10"
+        ixz="2.48281613499449E-08"
+        iyy="9.64981682902064E-06"
+        iyz="-1.43263267252535E-11"
+        izz="1.74096865451407E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/front_lidar_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/front_lidar_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0.2 -0.175 0.268"
+      rpy="0 0 -0.78539816339746" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="back_lidar_link">
+    <inertial>
+      <origin
+        xyz="-0.00243225423607701 -7.57434566700521E-06 -0.0156647798701824"
+        rpy="0 0 0" />
+      <mass
+        value="0.0269222563572854" />
+      <inertia
+        ixx="9.62972066845615E-06"
+        ixy="-6.69475455080912E-10"
+        ixz="2.4828161349934E-08"
+        iyy="9.64981682902092E-06"
+        iyz="-1.43263267611196E-11"
+        izz="1.74096865451409E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/back_lidar_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/back_lidar_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_lidar_joint"
+    type="fixed">
+    <origin
+      xyz="-0.199999999999958 0.174999999999997 0.268"
+      rpy="0 0 2.35619449019234" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_lidar_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.00781360439226064 -4.62643811109874E-05 0.00015691163838176"
+        rpy="0 0 0" />
+      <mass
+        value="0.0189598021123256" />
+      <inertia
+        ixx="1.09290416951151E-05"
+        ixy="5.74101407704989E-09"
+        ixz="-2.17154464045429E-08"
+        iyy="1.72930174582617E-06"
+        iyz="-8.47818936297681E-09"
+        izz="1.0379713403702E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/camera_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/camera_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.264320690911 0 0.169753030571818"
+      rpy="0 -0.139626340159547 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fl_steering_link">
+    <inertial>
+      <origin
+        xyz="-4.41226727665167E-05 0.0157129719167315 0.00410410320602114"
+        rpy="0 0 0" />
+      <mass
+        value="0.935307991635668" />
+      <inertia
+        ixx="0.00108568401565883"
+        ixy="7.743516771268E-08"
+        ixz="-2.33490054511026E-07"
+        iyy="0.00106453940002428"
+        iyz="-0.000235815859378652"
+        izz="0.0012538948846579" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/fl_streering_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/fl_streering_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_steering_joint"
+    type="continuous">
+    <origin
+      xyz="0.194 0.169 0.1355"
+      rpy="-3.14159265358979 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fl_steering_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="fl_wheel_link">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 2.77555756156289E-17 -0.000252801407574443"
+        rpy="0 0 0" />
+      <mass
+        value="0.741126743204084" />
+      <inertia
+        ixx="0.000890769648192525"
+        ixy="-5.4135978102862E-25"
+        ixz="2.83258046844794E-20"
+        iyy="0.000890761023713873"
+        iyz="-4.04095046703963E-20"
+        izz="0.00113190510709934" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/fl_wheel_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/fl_wheel_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0749999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="fl_steering_link" />
+    <child
+      link="fl_wheel_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="fr_steering_link">
+    <inertial>
+      <origin
+        xyz="4.41226727666E-05 -0.0157129719167314 0.00410410320602098"
+        rpy="0 0 0" />
+      <mass
+        value="0.93530799163567" />
+      <inertia
+        ixx="0.00108568401565883"
+        ixy="7.74351677124048E-08"
+        ixz="2.33490054510254E-07"
+        iyy="0.00106453940002428"
+        iyz="0.000235815859378651"
+        izz="0.0012538948846579" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/fr_steering_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/fr_steering_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_steering_joint"
+    type="continuous">
+    <origin
+      xyz="0.194 -0.169 0.1355"
+      rpy="3.14159265358979 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fr_steering_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="fr_wheel_link">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 2.77555756156289E-17 0.000252801407574443"
+        rpy="0 0 0" />
+      <mass
+        value="0.741126743204084" />
+      <inertia
+        ixx="0.000890769648192525"
+        ixy="2.66918709362604E-24"
+        ixz="2.16085103308491E-20"
+        iyy="0.000890761023713874"
+        iyz="6.4878824945206E-20"
+        izz="0.00113190510709934" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/fr_wheel_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/fr_wheel_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0749999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="fr_steering_link" />
+    <child
+      link="fr_wheel_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rr_steering_link">
+    <inertial>
+      <origin
+        xyz="4.41226716285104E-05 -0.0157129719156636 0.0041041032048897"
+        rpy="0 0 0" />
+      <mass
+        value="0.935307991753156" />
+      <inertia
+        ixx="0.0010856840156653"
+        ixy="7.74351596728921E-08"
+        ixz="2.33490057369179E-07"
+        iyy="0.00106453940003436"
+        iyz="0.000235815859380944"
+        izz="0.00125389488467438" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/rr_steering_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/rr_steering_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rr_steering_joint"
+    type="continuous">
+    <origin
+      xyz="-0.194 -0.169 0.1365"
+      rpy="3.14159265358979 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rr_steering_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="rr_wheel_link">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 2.77555756156289E-17 0.000252801407574471"
+        rpy="0 0 0" />
+      <mass
+        value="0.741126743204084" />
+      <inertia
+        ixx="0.000890769648192525"
+        ixy="3.99267607366746E-24"
+        ixz="2.79728229390156E-20"
+        iyy="0.000890761023713874"
+        iyz="6.48770386799988E-20"
+        izz="0.00113190510709934" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/rr_wheel_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/rr_wheel_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rr_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0749999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="rr_steering_link" />
+    <child
+      link="rr_wheel_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rl_steering_link">
+    <inertial>
+      <origin
+        xyz="-4.41226727664334E-05 0.0157129719167315 0.00410410320602111"
+        rpy="0 0 0" />
+      <mass
+        value="0.935307991635669" />
+      <inertia
+        ixx="0.00108568401565883"
+        ixy="7.74351677138188E-08"
+        ixz="-2.3349005451069E-07"
+        iyy="0.00106453940002428"
+        iyz="-0.000235815859378651"
+        izz="0.0012538948846579" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/rl_steering_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/rl_steering_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rl_steering_joint"
+    type="continuous">
+    <origin
+      xyz="-0.194 0.169 0.1365"
+      rpy="3.14159265358979 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rl_steering_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rl_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 0 -0.000252801407574471"
+        rpy="0 0 0" />
+      <mass
+        value="0.741126743204084" />
+      <inertia
+        ixx="0.000890769648192525"
+        ixy="-4.04510352288153E-24"
+        ixz="9.43709781956294E-21"
+        iyy="0.000890761023713874"
+        iyz="-1.30478774219597E-19"
+        izz="0.00113190510709935" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/rl_wheel_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_air_description/meshes/dae/rl_wheel_link.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rl_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0749999999999999"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="rl_steering_link" />
+    <child
+      link="rl_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
