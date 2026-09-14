@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot
+  name="ranger_desription">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0169024482972742 0.00678181341928169 0.0577617033872562"
+        rpy="0 0 0" />
+      <mass
+        value="88.757612699937" />
+      <inertia
+        ixx="1.71234483232615"
+        ixy="0.0110513757122467"
+        ixz="-0.0193888071078111"
+        iyy="4.90027909719284"
+        iyz="-5.41974668008998E-05"
+        izz="6.3942540769903" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/base_test.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/base_test.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="fr_steering_link">
+    <inertial>
+      <origin
+        xyz="0.0001118 -0.0073218 -0.085228"
+        rpy="0 0 0" />
+      <mass
+        value="2.0957" />
+      <inertia
+        ixx="0.0077827"
+        ixy="1.2908E-08"
+        ixz="7.5611E-07"
+        iyy="0.0012664"
+        iyz="-3.9878E-06"
+        izz="0.0079221" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/fr_steering_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/fr_steering_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_steering_joint"
+    type="revolute">
+    <origin
+      xyz="0.445 -0.28 0.0335"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fr_steering_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="fr_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.00095113 -1.6964E-07 0.0020954"
+        rpy="0 0 0" />
+      <mass
+        value="11.468" />
+      <inertia
+        ixx="0.05332"
+        ixy="3.0935E-09"
+        ixz="8.2702E-07"
+        iyy="0.080083"
+        iyz="2.1462E-07"
+        izz="0.11423" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/fr_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/fr_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fr_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.001 -0.2918"
+      rpy="1.5708 0 0" />
+    <parent
+      link="fr_steering_link" />
+    <child
+      link="fr_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="fl_steering_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.00010411 0.0077919 -0.086394"
+        rpy="0 0 0" />
+      <mass
+        value="2.1046" />
+      <inertia
+        ixx="0.0077836"
+        ixy="1.5708E-08"
+        ixz="1.3527E-06"
+        iyy="0.0012676"
+        iyz="3.3293E-06"
+        izz="0.007923" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/fl_steering_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/fl_steering_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_steering_wheel_joint"
+    type="revolute">
+    <origin
+      xyz="0.445 0.28 0.0335"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fl_steering_wheel_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="fl_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.00031140886112424 -1.6963766547029E-07 -0.00209855961757532"
+        rpy="0 0 0" />
+      <mass
+        value="11.4679471902891" />
+      <inertia
+        ixx="0.0533204704631189"
+        ixy="3.00515938467181E-09"
+        ixz="8.26975779320523E-07"
+        iyy="0.0800825148768417"
+        iyz="2.14912097018666E-07"
+        izz="0.114229464676059" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/fl_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/fl_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fl_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.001 -0.29345"
+      rpy="1.5708 0 0" />
+    <parent
+      link="fl_steering_wheel_link" />
+    <child
+      link="fl_wheel_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rl_steering_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.000104728166458012 0.00747335013616163 -0.0851648618324647"
+        rpy="0 0 0" />
+      <mass
+        value="2.09213915941036" />
+      <inertia
+        ixx="0.00778255710444038"
+        ixy="1.57079408079638E-08"
+        ixz="1.35270333030104E-06"
+        iyy="0.00126619444273402"
+        iyz="3.32543440503297E-06"
+        izz="0.00792198479734778" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/rl_steering_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/rl_steering_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rl_steering_wheel_joint"
+    type="revolute">
+    <origin
+      xyz="-0.445 0.28 0.0335000000000006"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rl_steering_wheel_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="rl_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.000311408861124352 -1.69637665525801E-07 -0.00209855961757532"
+        rpy="0 0 0" />
+      <mass
+        value="11.4679471902891" />
+      <inertia
+        ixx="0.0533204704631187"
+        ixy="3.00515931268087E-09"
+        ixz="8.26975779336715E-07"
+        iyy="0.0800825148768415"
+        iyz="2.14912096993789E-07"
+        izz="0.114229464676059" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/rl_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/rl_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rl_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.001 -0.29345"
+      rpy="1.5708 0 0" />
+    <parent
+      link="rl_steering_wheel_link" />
+    <child
+      link="rl_wheel_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="rr_steering_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.000104728166458012 0.00747335013616163 -0.0851648618324647"
+        rpy="0 0 0" />
+      <mass
+        value="2.09213915941036" />
+      <inertia
+        ixx="0.00778255710444038"
+        ixy="1.57079408079638E-08"
+        ixz="1.35270333030104E-06"
+        iyy="0.00126619444273402"
+        iyz="3.32543440503297E-06"
+        izz="0.00792198479734778" />
+      </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/rr_steering_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/rr_steering_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rr_steering_wheel_joint"
+    type="revolute">
+    <origin
+      xyz="-0.445 -0.28 0.0335000000000006"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rr_steering_wheel_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="10" />
+  </joint>
+  <link
+    name="rr_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.000951130287434154 -1.69637665581313E-07 0.00209543087328679"
+        rpy="0 0 0" />
+      <mass
+        value="11.4679471902891" />
+      <inertia
+        ixx="0.0533204700928865"
+        ixy="3.09346356458604E-09"
+        ixz="8.27015234587234E-07"
+        iyy="0.0800825150191658"
+        iyz="2.14615155034353E-07"
+        izz="0.114229464195811" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/rr_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ranger_desription/meshes/rr_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rr_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.001 -0.2918"
+      rpy="1.5708 0 0" />
+    <parent
+      link="rr_steering_wheel_link" />
+    <child
+      link="rr_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
